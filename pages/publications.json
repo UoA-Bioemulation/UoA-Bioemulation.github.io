@@ -1,0 +1,23 @@
+[
+    {
+        "type": "proceedings",
+        "key": "rtas2014",
+        "author": "Eugene Yip and Matthew Kuo and Partha S Roop and David Broman",
+        "title": "Relaxing the Synchronous Approach for Mixed-Criticality Systems",
+        "booktitle": "12th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+        "year": "2014",
+        "month": "apr",
+        "location": "Berlin, Germany",
+        "numpages": "12",
+        "links": {
+            "PDF": "http://homepages.engineering.auckland.ac.nz/~pretzel/papers/rtas2014.pdf",
+            "Presentation": "http://homepages.engineering.auckland.ac.nz/~pretzel/papers/rtas2014.pptx"
+        },
+        "our_authors": [
+            "eyip",
+            "mkuo",
+            "proop",
+            "dbro"
+        ]
+    }
+]

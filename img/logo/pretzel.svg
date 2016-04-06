@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 561 107" style="enable-background:new 0 0 561 107;" xml:space="preserve">
+<style type="text/css">
+	.text_border{stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.text_fill{fill: #000000;}
+	.secondary_text_border{stroke:#1E88E5;stroke-width:2;stroke-miterlimit:10;}
+	.secondary_text_fill{fill: #1E88E5;}
+	.symbol_border{stroke:#43A047;stroke-width:2;stroke-miterlimit:10;}
+	.symbol_fill{fill:#43A047;}
+	.evenodd{fill-rule: evenodd}
+</style>
+<g>
+	<!-- Symbol -->
+	<path class="symbol_border symbol_fill" d="M31,76
+		l10, 0
+		l0,-40
+        a25,25 0 1 1 50,0
+		l0,20
+        a40,40 0 1 1 -80,0
+		l0,-20
+        a25,25 0 1 1 50,0
+		l0,40
+        l10, 0
+        l0,-40
+        a35,35 0 1 0 -70,0
+		l0,20
+        a50,50 0 1 0 100,0
+        l0,-20
+        a35,35 0 1 0 -70,0
+		l0,40
+        z"/>
+
+	<!-- PRETzel -->
+	<g transform="translate(130,1)">
+		<!-- P -->
+		<g transform="translate(0,0)">
+			<path class="text_border text_fill" d="M0,0
+				l45,0
+		        a7.5,7.5 0 1 1 0,15
+				l-45,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M55,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,30
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M55,30
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,45
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M15,45
+				l30,0
+		        a7.5,7.5 0 1 1 0,15
+				l-30,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,60
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,75
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,90
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+		</g>
+
+		<!-- R -->
+		<g transform="translate(80,0)">
+			<path class="text_border text_fill" d="M0,0
+				l45,0
+		        a7.5,7.5 0 1 1 0,15
+				l-45,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M55,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,30
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M55,30
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,45
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M15,45
+				l30,0
+		        a7.5,7.5 0 1 1 0,15
+				l-30,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,60
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M35,60
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,75
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M45,75
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,90
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M55,90
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+		</g>
+
+		<!-- E -->
+		<g transform="translate(160,0)">
+			<path class="text_border text_fill" d="M10,0
+				l50,0
+		        a7.5,7.5 0 1 1 0,15
+				l-50,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,30
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,45
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M15,45
+				l30,0
+		        a7.5,7.5 0 1 1 0,15
+				l-30,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,60
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M0,75
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M10,90
+				l50,0
+		        a7.5,7.5 0 1 1 0,15
+				l-50,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+		</g>
+
+		<!-- T -->
+		<g transform="translate(240,0)">
+			<path class="text_border text_fill" d="M0,0
+				l60,0
+		        a7.5,7.5 0 1 1 0,15
+				l-60,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M30,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M30,30
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M30,45
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M30,60
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M30,75
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+			<path class="text_border text_fill" d="M30,90
+				l0,0
+		        a7.5,7.5 0 1 1 0,15
+				l0,0
+		        a7.5,7.5 0 1 1 0,-15
+		        z"/>
+		</g>
+
+		<!-- z -->
+		<g transform="translate(320,55)">
+			<path class="secondary_text_border secondary_text_fill" d="M0,0
+				l40,0
+		        l0,10
+				l-25,30
+				l25,0
+				l0,10
+				l-40,0
+				l0,-10
+				l25,-30
+				l-25,0
+		        z"/>
+		</g>
+
+		<!-- e -->
+		<g transform="translate(365,55)">
+			<g transform="scale(0.5263157894736842) translate(95, 47.5)">
+				<path class="secondary_text_border secondary_text_fill evenodd" d="M0,0
+					l-75,0
+					a27.5,27.5 0 0 0 51.32,13.75
+					l17.32,10
+					a47.5,47.5 0 1 1 6.36,-23.75
+					z
+
+					m-22.5,-15
+					l-50,0
+					a27.5,27.5 0 0 1 50,0
+					z" />
+			</g>
+		</g>
+
+		<!-- l -->
+		<g transform="translate(420,35)">
+			<path class="secondary_text_border secondary_text_fill" d="M0,0
+				l10,0
+		        l0,70
+				l-10,0
+				l0,-70
+		        z"/>
+		</g>
+	</g>
+</g>
+</svg>

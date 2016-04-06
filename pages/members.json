@@ -1,0 +1,43 @@
+[
+    {
+        "key": "proop",
+        "name": "Partha Roop",
+        "photo": "http://pretzel.ece.auckland.ac.nz/wp-uploads/2013/02/partha1_small.jpg",
+        "position": "Senior Lecturer and Group Leader",
+        "contact": {
+            "phone": "+64 9 3737599 EXT:85583",
+            "fax": "+64 9 3737461",
+            "email": "p.roop@auckland.ac.nz"
+        },
+        "info": {
+            "background": "I did a PhD in Computer Science and Engineering from the University of New South Wales, Sydney, Australia, an M. Tech from Indian Institute of Technology in Kharagpur, India and a B. E degree from Anna University (College of Engineering), Madras, India.",
+            "research_interests": "My main research interests is in the area of real-time embedded systems. These are ubiquitous computing systems that have challenging design issues in both hardware and software fronts. Of particular interest to me are systems in industrial control such as airport baggage handling and other complex material handling systems. I am also looking at several design challenges in embedded systems such as the static timing analysis of embedded code, design of processors that guarantee precise timing and the design of complex systems on a chip (SoC) by automatically combining many pre-verified IP blocks. An interesting project that combines many of these challenges is the design of interactive indoor sports environments and we are developing such environments at UoA. I have proposed a family of processors called reactive processors which are specifically designed for reactive embedded applications."
+        }
+    },
+    {
+        "key": "mkuo",
+        "name": "Matthew Kuo",
+        "photo": "http://pretzel.ece.auckland.ac.nz/wp-uploads/2013/02/matthew1-247x300.jpg",
+        "position": "PhD Student",
+        "contact": {
+            "email": "mkuo005@aucklanduni.ac.nz"
+        },
+        "info": {
+            "background": "I am doctoral student in the department of Electrical and Computer Systems Engineering. I have received my BE also at the University of Auckland New Zealand.<br /><br />My hobbies are playing strategic board games such as Chess and Go.",
+            "research_interests": "My research interests are hard-real time systems and timing predictable hardware architectures. In addition, I have great interest in cyber physical systems such as augmented and virtual reality systems."
+        }
+    },
+    {
+        "key": "eyip",
+        "name": "Eugene Yip",
+        "photo": "http://pretzel.ece.auckland.ac.nz/wp-uploads/2013/02/Eugene-Yip.jpg",
+        "position": "Doctoral Candidate",
+        "contact": {
+            "phone": "+64 9 373 7599 ext 87060",
+            "email": "eyip002@aucklanduni.ac.nz"
+        },
+        "info": {
+            "background": "Eugene Yip received his undergraduate degree in Engineering (Hons) from the University of Auckland. He is currently a Doctoral Candidate, supervised by Dr. Partha Roop and Dr. Morteza Biglari-Abhari. His primary field of interest is in the deterministic parallel programming of embedded multicore systems with safety-critical concerns. He is developing a synchronous extension to C with formal semantics, called ForeC, which allows programmers to write deterministic parallel programs. To complement the language, he is also developing a static timing analysis tool for computing WCRT of ForeC programs executed on multicore systems. He has served as a teaching assistant in the software design and digital logic courses, and a student mentoring scheme.<br /><br />Eugene is interested in website development and opensource projects. He has been involved in Spark, which is a student-led organisation for fostering the spirit of entrepreneurship at the University of Auckland. He has also tried Salsa, Ceroc, and enjoys Ballroom dancing. To keep his writing fluent, he enjoys the use of fountain pens."
+        }
+    }
+]
