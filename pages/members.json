@@ -3,7 +3,8 @@
         "key": "proop",
         "name": "Partha Roop",
         "photo": "http://pretzel.ece.auckland.ac.nz/wp-uploads/2013/02/partha1_small.jpg",
-        "position": "Senior Lecturer and Group Leader",
+        "position": "Senior Lecturer",
+        "role": "leader",
         "contact": {
             "phone": "+64 9 3737599 EXT:85583",
             "fax": "+64 9 3737461",
@@ -15,29 +16,146 @@
         }
     },
     {
-        "key": "mkuo",
-        "name": "Matthew Kuo",
-        "photo": "http://pretzel.ece.auckland.ac.nz/wp-uploads/2013/02/matthew1-247x300.jpg",
-        "position": "PhD Student",
+        "key": "amal",
+        "name": "Avinash Malik",
+        "photo": "",
+        "position": "Lecturer",
+        "role": "member",
         "contact": {
-            "email": "mkuo005@aucklanduni.ac.nz"
+            "email": "avinash.malik@auckland.ac.nz"
         },
         "info": {
-            "background": "I am doctoral student in the department of Electrical and Computer Systems Engineering. I have received my BE also at the University of Auckland New Zealand.<br /><br />My hobbies are playing strategic board games such as Chess and Go.",
-            "research_interests": "My research interests are hard-real time systems and timing predictable hardware architectures. In addition, I have great interest in cyber physical systems such as augmented and virtual reality systems."
+        }
+    },
+    {
+        "key": "mtrew",
+        "name": "Mark Trew",
+        "photo": "",
+        "position": "Senior Lecturer",
+        "role": "member",
+        "contact": {
+            "email": "m.trew@auckland.ac.nz"
+        },
+        "info": {
+        }
+    },
+    {
+        "key": "npat",
+        "name": "Nitish Patel",
+        "photo": "",
+        "position": "Lecturer",
+        "role": "member",
+        "contact": {
+            "email": "nd.patel@auckland.ac.nz"
+        },
+        "info": {
+        }
+    },
+    {
+        "key": "fsun",
+        "name": "Frederick Sundram",
+        "photo": "",
+        "position": "Senior Lecturer",
+        "role": "member",
+        "contact": {
+            "email": "f.sundram@auckland.ac.nz"
+        },
+        "info": {
+        }
+    },
+    {
+        "key": "mnad",
+        "name": "Muhammad Nadeem",
+        "photo": "",
+        "position": "Lecturer",
+        "role": "member",
+        "contact": {
+            "email": "muhammad.nadeem@auckland.ac.nz"
+        },
+        "info": {
+        }
+    },
+    {
+        "key": "sand",
+        "name": "Sidharta Andalam",
+        "photo": "",
+        "position": "Postdoctoral Researcher",
+        "role": "member",
+        "contact": {
+            "email": "sand080@aucklanduni.ac.nz"
+        },
+        "info": {
+        }
+    },
+    {
+        "key": "nall",
+        "name": "Nathan Allen",
+        "photo": "",
+        "position": "PhD Student",
+        "role": "member",
+        "contact": {
+            "email": "nall426@aucklanduni.ac.nz"
+        },
+        "info": {
         }
     },
     {
         "key": "eyip",
         "name": "Eugene Yip",
-        "photo": "http://pretzel.ece.auckland.ac.nz/wp-uploads/2013/02/Eugene-Yip.jpg",
-        "position": "Doctoral Candidate",
+        "photo": "",
+        "position": "",
+        "role": "alumni",
         "contact": {
-            "phone": "+64 9 373 7599 ext 87060",
             "email": "eyip002@aucklanduni.ac.nz"
         },
         "info": {
-            "background": "Eugene Yip received his undergraduate degree in Engineering (Hons) from the University of Auckland. He is currently a Doctoral Candidate, supervised by Dr. Partha Roop and Dr. Morteza Biglari-Abhari. His primary field of interest is in the deterministic parallel programming of embedded multicore systems with safety-critical concerns. He is developing a synchronous extension to C with formal semantics, called ForeC, which allows programmers to write deterministic parallel programs. To complement the language, he is also developing a static timing analysis tool for computing WCRT of ForeC programs executed on multicore systems. He has served as a teaching assistant in the software design and digital logic courses, and a student mentoring scheme.<br /><br />Eugene is interested in website development and opensource projects. He has been involved in Spark, which is a student-led organisation for fostering the spirit of entrepreneurship at the University of Auckland. He has also tried Salsa, Ceroc, and enjoys Ballroom dancing. To keep his writing fluent, he enjoys the use of fountain pens."
+        }
+    },
+    {
+        "key": "wai",
+        "name": "Weiwei Ai",
+        "photo": "",
+        "position": "PhD Student",
+        "role": "member",
+        "contact": {
+            "email": "wai484@aucklanduni.ac.nz"
+        },
+        "info": {
+        }
+    },
+    {
+        "key": "mkuo",
+        "name": "Matthew Kuo",
+        "photo": "",
+        "position": "PhD Student",
+        "role": "member",
+        "contact": {
+            "email": "mkuo005@aucklanduni.ac.nz"
+        },
+        "info": {
+        }
+    },
+    {
+        "key": "hram",
+        "name": "Harshavardhan Ramanna",
+        "photo": "",
+        "position": "",
+        "role": "member",
+        "contact": {
+        },
+        "info": {
+        }
+    },
+    {
+        "key": "lwan",
+        "name": "Luman Wang",
+        "photo": "",
+        "position": "Masters Student",
+        "role": "member",
+        "contact": {
+            "email": "lwan353@aucklanduni.ac.nz"
+        },
+        "info": {
         }
     }
 ]
