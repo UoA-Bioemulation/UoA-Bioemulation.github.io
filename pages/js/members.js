@@ -38,6 +38,10 @@ $.ajax("/pages/members.json")
         html += '       <h2>';
         html += '           ' + member_struct["name"];
 
+        if('role' in member_struct) {
+            html += '           <span class="small">(' + getRoleNameForKey(member_struct["role"]) + ')</span>';
+        }
+
         if('position' in member_struct) {
             html += '           <br /><span class="small">' + member_struct["position"] + '</span>';
         }
@@ -45,16 +49,24 @@ $.ajax("/pages/members.json")
         html += '       </h2>';
 
         if('contact' in member_struct) {
-            html += '       <h3>Contact Details</h3>';
-            for(var method in member_struct["contact"]) {
-                method_name = make_nice_header(method);
+            var at_least_one = false;
+            for(var key in member_struct['contact']) {
+                at_least_one = true;
+                break;
+            }
 
-                var content = member_struct["contact"][method];
-                if(method === "email") {
-                    content = '<a href="mailto:' + member_struct["contact"][method] + '">' + member_struct["contact"][method] + '</a>';
+            if(at_least_one) {
+                html += '       <h3>Contact Details</h3>';
+                for(var method in member_struct["contact"]) {
+                    method_name = make_nice_header(method);
+
+                    var content = member_struct["contact"][method];
+                    if(method === "email") {
+                        content = '<a href="mailto:' + member_struct["contact"][method] + '">' + member_struct["contact"][method] + '</a>';
+                    }
+
+                    html += '       </i> <span class="font-bold">' + method_name + '</span>: ' + content + '<br />';
                 }
-
-                html += '       </i> <span class="font-bold">' + method_name + '</span>: ' + content + '<br />';
             }
         }
 
@@ -149,6 +161,10 @@ $.ajax("/pages/members.json")
                 htmlpub += "</ul>";
             }
 
+            if(keys.length == 0) {
+                htmlpub += '<div class="alert alert-info text-center">No publications found.</div>';
+            }
+
             $parsed.find("#publications_holder").html(htmlpub);
 
             $("#members_holder").html($parsed);
@@ -162,18 +178,44 @@ $.ajax("/pages/members.json")
             });
         })
         .fail(function() {
-            $parsed.find("#publications_holder").html('<div class="alert alert-danger text-center">An error occured while fetching publications for this member...</div>');
+            $parsed.find("#publications_holder").html('<div class="alert alert-danger text-center">An error occured while fetching publications!</div>');
             $("#members_holder").html($parsed);
         });
     }
     else {
-        var html = '<ul>';
-
+        var members_by_role = {};
         for(var i=0; i<members.length; i++) {
-            html += '<li><a href="#!members?member=' + members[i]["key"] + '">' + members[i]["name"] + "</a></li>";
+            var role = "unknown";
+            if("role" in members[i] && members[i]["role"] !== "") {
+                role = members[i]["role"];
+            }
+            if(!members_by_role.hasOwnProperty(role)) {
+                members_by_role[role] = [];
+            }
+
+            members_by_role[role].push(members[i]);
         }
 
-        html += '</ul>';
+        var html = '';
+
+        for(var role in members_by_role) {
+            var role_name = getRoleNameForKey(role);
+
+            if(members_by_role[role].length > 1) {
+                if(role !== "alumni") {
+                    role_name += "s";
+                }
+            }
+
+            html += '       <h3>' + role_name + '</h3>';
+            html += '<ul>';
+
+            for(var i=0; i<members_by_role[role].length; i++) {
+                html += '<li><a href="#!members?member=' + members_by_role[role][i]["key"] + '">' + members_by_role[role][i]["name"] + "</a></li>";
+            }
+
+            html += '</ul>';
+        }
 
         $("#members_holder").html(html);
     }

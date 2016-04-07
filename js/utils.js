@@ -7,6 +7,13 @@ function make_nice_header(string) {
     });
 }
 
+function getRoleNameForKey(key) {
+    switch(key) {
+        case "leader": return "Group Leader";
+        default: return make_nice_header(key);
+    }
+}
+
 function getMonthForShort(mon) {
     switch(mon) {
         case "jan": return "January";
@@ -66,7 +73,7 @@ function getReferenceForProceeding(publication) {
     }
 
     if("note" in publication && publication["note"] !== "") {
-        str += '<span class="label label-success">' + publication["note"] + '</span>';
+        str += '<span class="label label-success">' + publication["note"] + '</span> ';
     }
 
     return str;
@@ -112,7 +119,7 @@ function getReferenceForArticle(publication) {
     }
 
     if("note" in publication && publication["note"] !== "") {
-        str += '<span class="label label-success">' + publication["note"] + '</span>';
+        str += '<span class="label label-success">' + publication["note"] + '</span> ';
     }
 
     return str;
@@ -147,6 +154,38 @@ function getReferenceForTechReport(publication) {
 
     if(str.substr(str.length-2) === ", ") {
         str = str.substr(0, str.length-2) + ". ";
+    }
+
+    if("note" in publication && publication["note"] !== "") {
+        str += '<span class="label label-success">' + publication["note"] + '</span> ';
+    }
+
+    return str;
+}
+
+function getReferenceForBook(publication) {
+    var str = "";
+
+    if("author" in publication && publication["author"] !== "") {
+        str += publication["author"];
+
+        if("year" in publication && publication["year"] !== "") {
+            str += " (" + publication["year"] + ")";
+        }
+
+        str += ". ";
+    }
+
+    if("title" in publication && publication["title"] !== "") {
+        str += publication["title"] + ". ";
+    }
+
+    if("publisher" in publication && publication["publisher"] !== "") {
+        str += publication["publisher"] + ". ";
+    }
+
+    if("note" in publication && publication["note"] !== "") {
+        str += '<span class="label label-success">' + publication["note"] + '</span> ';
     }
 
     return str;
@@ -275,6 +314,72 @@ function getBibtexForTechReport(publication, bibtex_key) {
     return bibtex;
 }
 
+function getBibtexForBook(publication, bibtex_key) {
+    var bibtex = "@book{\n";
+    bibtex += "    " + bibtex_key;
+
+    if("author" in publication && publication["author"] !== "") {
+        bibtex += ',\n    author = "' + publication["author"] + '"';
+    }
+
+    if("title" in publication && publication["title"] !== "") {
+        bibtex += ',\n    title = "' + publication["title"] + '"';
+    }
+
+    if("year" in publication && publication["year"] !== "") {
+        bibtex += ',\n    year = ' + publication["year"];
+    }
+
+    if("publisher" in publication && publication["publisher"] !== "") {
+        bibtex += ',\n    publisher = ' + publication["publisher"];
+    }
+
+    bibtex += "\n}";
+
+    return bibtex;
+}
+
+function getBibtexForCollection(publication, bibtex_key) {
+    var bibtex = "@incollection{\n";
+    bibtex += "    " + bibtex_key;
+
+    if("author" in publication && publication["author"] !== "") {
+        bibtex += ',\n    author = "' + publication["author"] + '"';
+    }
+
+    if("title" in publication && publication["title"] !== "") {
+        bibtex += ',\n    title = "' + publication["title"] + '"';
+    }
+
+    if("booktitle" in publication && publication["booktitle"] !== "") {
+        bibtex += ',\n    booktitle = "' + publication["booktitle"] + '"';
+    }
+
+    if("location" in publication && publication["location"] !== "") {
+        bibtex += ',\n    location = "' + publication["location"] + '"';
+    }
+
+    if("month" in publication && publication["month"] !== "") {
+        bibtex += ',\n    month = ' + publication["month"];
+    }
+
+    if("year" in publication && publication["year"] !== "") {
+        bibtex += ',\n    year = ' + publication["year"];
+    }
+
+    if("pages" in publication && publication["pages"] !== "") {
+        bibtex += ',\n    pages = ' + publication["pages"];
+    }
+
+    if("note" in publication && publication["note"] !== "") {
+        bibtex += ',\n    note = "' + publication["note"] + '"';
+    }
+
+    bibtex += "\n}";
+
+    return bibtex;
+}
+
 function getStringForPublication(publication) {
     var str = "";
     var bibtex = "";
@@ -298,6 +403,14 @@ function getStringForPublication(publication) {
     else if("type" in publication && publication["type"] === "techreport") {
         str = getReferenceForTechReport(publication);
         bibtex = getBibtexForTechReport(publication, bibtex_key);
+    }
+    else if("type" in publication && publication["type"] === "book") {
+        str = getReferenceForBook(publication);
+        bibtex = getBibtexForBook(publication, bibtex_key);
+    }
+    else if("type" in publication && publication["type"] === "collection") {
+        str = getReferenceForProceeding(publication);
+        bibtex = getBibtexForCollection(publication, bibtex_key);
     }
     else {
         return "";
