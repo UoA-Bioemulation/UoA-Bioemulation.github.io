@@ -1,23 +1,97 @@
 [
     {
         "type": "proceedings",
-        "key": "rtas2014",
-        "author": "Eugene Yip and Matthew Kuo and Partha S Roop and David Broman",
-        "title": "Relaxing the Synchronous Approach for Mixed-Criticality Systems",
-        "booktitle": "12th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
-        "year": "2014",
-        "month": "apr",
-        "location": "Berlin, Germany",
-        "numpages": "12",
+        "key": "date2016codegen",
+        "author": "Nathan Allen, Sidharta Andalam, Partha Roop, Avinash Malik, Mark Trew and Nitish Patel",
+        "title": "Modular code generation for emulating the electrical conduction system of the human heart",
+        "booktitle": "DATE 16",
+        "year": "2016",
+        "month": "mar",
+        "location": "Dresden, Germany",
+        "numpages": "6",
         "links": {
-            "PDF": "http://homepages.engineering.auckland.ac.nz/~pretzel/papers/rtas2014.pdf",
-            "Presentation": "http://homepages.engineering.auckland.ac.nz/~pretzel/papers/rtas2014.pptx"
         },
         "our_authors": [
-            "eyip",
-            "mkuo",
+            "nall",
+            "sand",
             "proop",
-            "dbro"
+            "amal",
+            "mtrew",
+            "npat"
+        ]
+    },
+    {
+        "type": "journal",
+        "key": "tse2016",
+        "author": "",
+        "title": "TSE 2016 Codegen",
+        "journal": "TSE",
+        "year": "2016",
+        "volume": "",
+        "month": "",
+        "pages": "",
+        "links": {
+        },
+        "our_authors": [
+        ]
+    },
+    {
+        "type": "techreport",
+        "key": "uoa-techreport-heart",
+        "author": "",
+        "title": "Eugene's Report",
+        "institution": "Faculty of Engineering, University of Auckland",
+        "number": "",
+        "year": "",
+        "month": "",
+        "links": {
+        },
+        "our_authors": [
+        ]
+    },
+    {
+        "type": "proceedings",
+        "key": "date2016validation",
+        "author": "",
+        "title": "Weiwei's DATE paper",
+        "booktitle": "DATE 16",
+        "year": "2016",
+        "month": "mar",
+        "location": "Dresden, Germany",
+        "numpages": "4",
+        "links": {
+        },
+        "our_authors": [
+        ]
+    },
+    {
+        "type": "proceedings",
+        "key": "embs-16-spacex",
+        "author": "",
+        "title": "Sid's SpacEx Letter",
+        "booktitle": "",
+        "year": "",
+        "month": "",
+        "location": "",
+        "numpages": "",
+        "links": {
+        },
+        "our_authors": [
+        ]
+    },
+    {
+        "type": "proceedings",
+        "key": "slides",
+        "author": "",
+        "title": "Slides To Be Added",
+        "booktitle": "",
+        "year": "",
+        "month": "",
+        "location": "",
+        "numpages": "",
+        "links": {
+        },
+        "our_authors": [
         ]
     }
 ]
