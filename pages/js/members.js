@@ -10,6 +10,8 @@ $.ajax("/pages/members.json")
     var member = query_params["member"];
 
     if(typeof member !== "undefined" && member !== "") {
+        $(".back-button").show();
+
         var member_struct = null;
 
         for(var i=0; i<members.length; i++) {
@@ -104,6 +106,8 @@ $.ajax("/pages/members.json")
         loadPublications(member);
     }
     else {
+        $(".back-button").hide();
+
         var members_by_role = {};
         for(var i=0; i<members.length; i++) {
             var role = "unknown";
