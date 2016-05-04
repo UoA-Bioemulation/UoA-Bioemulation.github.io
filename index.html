@@ -155,12 +155,10 @@
         $.getScript(javascript_page);
     }
 
-    var load_from_hash = function() {
-        var page = window.location.hash.substr(2);
-        if (page.length == 0) {
-            page = "home";
-        }
-
+    var load_query_params = function(page) {
+        if(page === undefined)
+            page = window.location.hash.substr(2);
+        
         query_params = [];
         if(page.indexOf("?") > -1) {
             var params_str = page.substr(page.indexOf("?")+1);
@@ -175,6 +173,17 @@
 
             page = page.substr(0, page.indexOf("?"));
         }
+
+        return page;
+    }
+
+    var load_from_hash = function() {
+        var page = window.location.hash.substr(2);
+        if (page.length == 0) {
+            page = "home";
+        }
+
+        page = load_query_params(page);
 
         load_content(page);
     }
