@@ -30,7 +30,7 @@ a {
 
 	&:hover, &:focus {
 		background-color: $primary_color;
-		border-color: mix($primary_color, #000000, 0.3);
+		border-color: mix($primary_color, #000000, 70);
 	}
 }
 
