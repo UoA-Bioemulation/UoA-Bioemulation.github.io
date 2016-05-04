@@ -20,6 +20,26 @@ a {
     }
 }
 
+table {
+	thead {
+	    background: rgba($primary_color, 0.8);
+	    color: #ffffff;
+	}
+
+	th {
+		text-align: center;
+	}
+
+	&.first-strong tr td:nth-child(1) {
+		font-weight: bold;
+	}
+
+	&.centered td {
+		text-align: center;
+		vertical-align: middle!important;
+	}
+}
+
 .btn {
 	border-radius: 0px;
 }
@@ -153,6 +173,14 @@ nav {
 	img {
 		max-width: 100%;
 		max-height: 500px;
+	}
+
+	&.max-200 {
+		max-height: 200px;
+
+		img {
+			max-height: 200px;
+		}
 	}
 }
 

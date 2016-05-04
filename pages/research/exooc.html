@@ -1,4 +1,108 @@
 <div class="text-center margin-bottom-md">
-    <h2>Executable Organ On a Chip (ExOoC)</h2>
+    <h2>Executable Organ-on-Chip (ExOoC)</h2>
 </div>
-<p>Coming Soon!</p>
+<div class="inline-picture picture-right max-200">
+    <img src="/img/projects/exooc/exooc.png" />
+</div>
+<p>
+    The use of simulation models in biology is extensively studied.
+    In contrast to simulation, emulation is the process of designing and validating a controller, such as a pacemaker, in closed-loop with a physical process, or so called plant, such as a live heart, which needs controlling.
+    Emulation may be carried out either during the clinical trial phase with human subjects or animals.
+    We argue that such emulation is expensive, time limiting, and has associated ethical considerations.
+    We propose the science of <em>remulation</em> (reverse-emulation) as an alternative to emulation.
+    Remulation entails building executable models of the plant, rather than the controller, which respond in <em>real-time</em> to adjoining controllers allowing for flexible, cheaper, and quick closed-loop validation of controllers.
+    <em>Remulation</em> of a biological organ, rather than a physical process, is termed <em>bio-remulation</em>.
+</p>
+<p>
+    The executable biological models developed by the science of bio-remulation allows us to realize organs on reconfigurable computer chips, called <em>Field Programmable Gate Array</em> (FPGA).
+    Such an engineered "Executable Organ on Chip" (ExOoC) provides high-fidelity and real-time capabilities like a real biological organ (e.g., the heart), from the point of view of the medical device (e.g., the pacemaker).
+    Bio-remulation of such ExOoCs not only has excellent potential for medical device validation and certification but also can be used for personalisation and non-invasive diagnostics.
+    We have developed the first high-fidelity remulation model of the cardiac conduction system and engineered an <em>Executable Heart on Chip</em>.
+    This heart on a chip has been used to validate functional correctness and timing properties of off-the-shelf pacemakers.
+</p>
+
+
+<h3 class="padding-top-sm">Comparison with Biofluidic Organ-on-Chip (BfOoC)</h3>
+<p>
+    A BfOoC is a biofluidic chip with living cells that are capable of recreating organ level physiology.
+    Such BfOoC are being developed to simplify the clinical trial phase of drugs.
+    The following table presents a qualitative comparison between BfOoC and ExOoC.
+</p>
+
+<div class="panel panel-default margin-top-sm margin-bottom-sm">
+    <table class="table table-striped table-hover first-strong centered">
+        <thead>
+            <tr>
+                <th style="width: 25%"></th>
+                <th style="width: 37.5%">BfOoC</th>
+                <th style="width: 37.5%">ExOoC</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mechanism</td>
+                <td>Controls the fluid flow using various sensors to grow living cells and understand their behaviour.</td>
+                <td>Controls the data flow using switches to model cells and understand their behaviour.</td>
+            </tr>
+            <tr>
+                <td>Goal</td>
+                <td>Synthesis of minimal required functional units in order to replicate tissue or organ level behaviour.</td>
+                <td>Synthesis of organ level behabiour from a device perspective.</td>
+            </tr>
+            <tr>
+                <td>Drug Testing</td>
+                <td>Yes</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Device Testing</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Time Taken to Re-configure</td>
+                <td>Days to Months</td>
+                <td>Minutes</td>
+            </tr>
+            <tr>
+                <td>Cost</td>
+                <td>Expensive</td>
+                <td>Cheap</td>
+            </tr>
+            <tr>
+                <td>Fabrication Technology</td>
+                <td>Produced in labs since 2011</td>
+                <td>Mass produced by industry since 1984</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>
+    Like drugs, implantable medical devices also need clinical trials.
+    During these clinical trials, the device is exhaustively validated using animal or human subjects.
+    However, such trials are expensive, time consuming and have strict ethical considerations with associated hazards to human or animal life similar to drug testing.
+    Consider, for example, pacemakers; a pacemaker is a device that is designed to treat bradycardia (a slow heart rhythm) by sensing the heart function and providing therapy when needed.
+    A pacemaker senses the electrical activity of the heart through leads placed inside the heart and actuates through the same leads by stimulating the heart with electrical impulses when needed.
+    In spite of the rigorous development cycle, clinical trials and certification process of pacemakers, several devices have been recalled due to software failures.
+</p>
+<p>
+    BfOoC is suitable for testing of drugs, but is not ideal for the validation of implantable devices.
+    There are several reasons for this.
+    Firstly, a device validation framework will involve the closed-loop interaction of the device under test (the pacemaker) with its adjoining organ (the heart).
+    A pacemaker senses Electrograms (EGMs), which are produced due to the propagation of cellular action potentials traveling through the cardiac conduction system starting from the Sinoatrial (SA) node -- the natural pacemaker of the heart.
+    A complete or substantial conduction system of the heart is necessary to produce accurate EGMs.
+    BfOoC are nascent technological innovations, which make them incapable of simulating complete heart behaviour.
+    We observe, however, attempts have been made to create biofluidic heart on a chip, which enables recordings from cardiac myocytes and also study the impact of drugs.
+    However, these chips are limited when required to create the full heart behaviour as needed by a pacemaker.
+</p>
+<p>
+    Validating timing properties of a pacemaker requires the heart model to respond in real-time to the pacemaker inputs.
+    Furthermore, varying timing behaviours, such as increased heart rate, reduced heart rhythm need to be induced into the heart model to test the response of the pacemaker.
+    A BfOoC is not proposed for such closed-loop interaction with devices and may not be able to provide such real-time response at the entire organ level.
+</p>
+<p>
+    Finally, validation entails studying the response of the pacemaker in closed-loop with a heart induced with different diseased states, such a cardiac tissue scars, failure of the Atrio-Ventricular (AV) node, etc, or even a combination of multiple diseases.
+    Hence, quick reconfigurability of the heart model is necessary.
+    BfOoC are not designed for such reconfigurability and personalization.
+</p>
