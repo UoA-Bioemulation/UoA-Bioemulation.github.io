@@ -20,6 +20,24 @@ a {
     }
 }
 
+.btn {
+	border-radius: 0px;
+}
+
+.btn-primary {
+	background-color: rgba($primary_color, 0.8);
+	border-color: $primary_color;
+
+	&:hover, &:focus {
+		background-color: $primary_color;
+		border-color: mix($primary_color, #000000, 0.3);
+	}
+}
+
+.color-white {
+	color: #fff;
+}
+
 .cursor-pointer {
 	cursor: pointer;
 }
@@ -64,6 +82,17 @@ nav {
     }
 }
 
+.tab-content {
+	border: 1px solid #ddd;
+	border-radius: 4px 4px 4px 4px;
+
+	// These settings are for when the footer collapses
+	@media(min-width: 768px) {
+		border-top: none;
+		border-radius: 0px 0px 4px 4px;
+	}
+}
+
 .content {
 	min-height: 100vh;
 	padding-top: 60px;
@@ -92,6 +121,39 @@ nav {
     .text-muted {
         color: $dark_muted_color;
     }
+}
+
+.inline-picture {
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	max-height: 500px;
+
+	@media(min-width: 768px) {
+		&.picture-80 {
+			max-width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&.picture-left, &.picture-right {
+			max-width: 50%;
+			margin-left: 10px;
+			float: right;
+			margin-top: 0px;
+			margin-bottom: 0px;
+
+			&.picture-left {
+				margin-right: 10px;
+				float: left;
+			}
+		}
+	}
+
+	img {
+		max-width: 100%;
+		max-height: 500px;
+	}
 }
 
 /* Loading Icon */
