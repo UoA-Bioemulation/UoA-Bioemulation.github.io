@@ -36,8 +36,8 @@ function changeTab(page) {
         html += '       <h3 class="margin-top-md">';
         html += '           Publications';
         html += '           <span class="small" style="font-size: 60%;">';
-        html += '               Sort By: <a href="#!research?project=' + page + '&sort=year" data-sort="year" class="sort_change">Year</a>';
-        html += '               | <a href="#!research?project=' + page + '&sort=type" data-sort="type" class="sort_change">Type</a>';
+        html += '               Sort By: <a href="#!research?project=' + page + '&sort=year" class="sort_change">Year</a>';
+        html += '               | <a href="#!research?project=' + page + '&sort=type" class="sort_change">Type</a>';
         html += '           </span>';
         html += '       </h3>';
         html += '       <div id="publications_holder" class="padding-left-sm">';

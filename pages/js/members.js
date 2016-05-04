@@ -82,8 +82,8 @@ $.ajax("/pages/members.json")
         html += '       <h3>';
         html += '           Publications';
         html += '           <span class="small" style="font-size: 60%;">';
-        html += '               Sort By: <a href="#!members?member=' + member + '&sort=year">Year</a>';
-        html += '               | <a href="#!members?member=' + member + '&sort=type">Type</a>';
+        html += '               Sort By: <a href="#!members?member=' + member + '&sort=year" class="sort_change">Year</a>';
+        html += '               | <a href="#!members?member=' + member + '&sort=type" class="sort_change">Type</a>';
         html += '           </span>';
         html += '       </h3>';
         html += '       <div id="publications_holder" class="padding-left-sm">';
@@ -91,96 +91,17 @@ $.ajax("/pages/members.json")
         html += '   </div>';
         html += '</div>';
 
-        $parsed = $($.parseHTML(html));
+        $("#members_holder").html(html);
 
-        $.ajax("/pages/publications.json")
-        .done(function(datapub) {
-            if(typeof data === "string") {
-                publications = JSON.parse(datapub);
-            }
-            else {
-                publications = datapub;
-            }
+        $(".sort_change").click(function() {
+            window.history.pushState({}, document.title, $(this).attr("href"));
+            load_query_params();
+            loadPublications(member);
 
-            sorted = [];
-            keys = [];
-
-            var sort = query_params["sort"];
-
-            for(var i=0; i<publications.length; i++) {
-                key = 'Unknown';
-
-                if(sort === "type") {
-                    if('type' in publications[i]) {
-                        key = getPaperTypeForKey(publications[i]["type"]);
-                    }
-                }
-                else {
-                    if('year' in publications[i]) {
-                        key = publications[i]['year'];
-                    }
-                }
-
-                if('our_authors' in publications[i]) {
-                    if($.inArray(member, publications[i]['our_authors']) > -1) {
-                        if(!sorted.hasOwnProperty(key)) {
-                            sorted[key] = [];
-                            keys.push(key);
-                        }
-
-                        sorted[key].push(publications[i]);
-                    }
-                }
-            }
-
-            keys.sort();
-
-            if(sort !== "type") {
-                keys.reverse();
-            }
-
-            var htmlpub = '<div class="modal fade" id="bibtexModal" tabindex="-1" role="dialog" aria-labelledby="bibtexModalLabel">';
-            htmlpub += '   <div class="modal-dialog modal-lg" role="document">';
-            htmlpub += '       <div class="modal-content">';
-            htmlpub += '           <div class="modal-header">';
-            htmlpub += '               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-            htmlpub += '               <h4 class="modal-title" id="exampleModalLabel">Bibtex</h4>';
-            htmlpub += '           </div>';
-            htmlpub += '           <div class="modal-body">';
-            htmlpub += '           </div>';
-            htmlpub += '       </div>';
-            htmlpub += '   </div>';
-            htmlpub += '</div>';
-
-            for(var i=0; i<keys.length; i++) {
-                htmlpub += "<h4>" + keys[i] + "</h4>";
-                htmlpub += "<ul>";
-                for(var j=0; j<sorted[keys[i]].length; j++) {
-                    htmlpub += "<li>" + getStringForPublication(sorted[keys[i]][j]) + "</li>";
-                }
-                htmlpub += "</ul>";
-            }
-
-            if(keys.length == 0) {
-                htmlpub += '<div class="alert alert-info text-center">No publications found.</div>';
-            }
-
-            $parsed.find("#publications_holder").html(htmlpub);
-
-            $("#members_holder").html($parsed);
-
-            $('#bibtexModal').on('show.bs.modal', function (event) {
-                var $button = $(event.relatedTarget);
-                var bibtex_key = $button.data('entry');
-                var bibtex = $("#" + bibtex_key).html();
-                var $modal = $(this);
-                $modal.find('.modal-body').html("<pre>" + bibtex + "</pre>");
-            });
-        })
-        .fail(function() {
-            $parsed.find("#publications_holder").html('<div class="alert alert-danger text-center">An error occured while fetching publications!</div>');
-            $("#members_holder").html($parsed);
+            return false;
         });
+
+        loadPublications(member);
     }
     else {
         var members_by_role = {};
@@ -223,3 +144,93 @@ $.ajax("/pages/members.json")
 .fail(function() {
     $("#members_holder").html('<div class="alert alert-danger text-center" style="margin-top: 100px; margin-bottom: 100px;">An error occured while fetching members...</div>');
 });
+
+function loadPublications(member) {
+    $("#publications_holder").html(loading_html);
+
+    $.ajax("/pages/publications.json")
+    .done(function(data) {
+        if(typeof data === "string") {
+            publications = JSON.parse(data);
+        }
+        else {
+            publications = data;
+        }
+
+        sorted = [];
+        keys = [];
+
+        var sort = query_params["sort"];
+
+        for(var i=0; i<publications.length; i++) {
+            key = 'Unknown';
+
+            if(sort === "type") {
+                if('type' in publications[i]) {
+                    key = getPaperTypeForKey(publications[i]["type"]);
+                }
+            }
+            else {
+                if('year' in publications[i]) {
+                    key = publications[i]['year'];
+                }
+            }
+
+            if('our_authors' in publications[i]) {
+                if($.inArray(member, publications[i]['our_authors']) > -1) {
+                    if(!sorted.hasOwnProperty(key)) {
+                        sorted[key] = [];
+                        keys.push(key);
+                    }
+
+                    sorted[key].push(publications[i]);
+                }
+            }
+        }
+
+        keys.sort();
+
+        if(sort !== "type") {
+            keys.reverse();
+        }
+
+        var html = '<div class="modal fade" id="bibtexModal" tabindex="-1" role="dialog" aria-labelledby="bibtexModalLabel">';
+        html += '   <div class="modal-dialog modal-lg" role="document">';
+        html += '       <div class="modal-content">';
+        html += '           <div class="modal-header">';
+        html += '               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+        html += '               <h4 class="modal-title" id="exampleModalLabel">Bibtex</h4>';
+        html += '           </div>';
+        html += '           <div class="modal-body">';
+        html += '           </div>';
+        html += '       </div>';
+        html += '   </div>';
+        html += '</div>';
+
+        for(var i=0; i<keys.length; i++) {
+            html += "<h4>" + keys[i] + "</h4>";
+            html += "<ul>";
+            for(var j=0; j<sorted[keys[i]].length; j++) {
+                html += "<li>" + getStringForPublication(sorted[keys[i]][j]) + "</li>";
+            }
+            html += "</ul>";
+        }
+
+        if(keys.length == 0) {
+            html += '<div class="alert alert-info text-center">No publications found.</div>';
+        }
+
+        $("#publications_holder").html(html);
+
+        $('#bibtexModal').on('show.bs.modal', function (event) {
+            var $button = $(event.relatedTarget);
+            var bibtex_key = $button.data('entry');
+            var bibtex = $("#" + bibtex_key).html();
+            var $modal = $(this);
+            $modal.find('.modal-body').html("<pre>" + bibtex + "</pre>");
+        });
+    })
+    .fail(function() {
+        $("#publications_holder").html('<div class="alert alert-danger text-center">An error occured while fetching publications!</div>');
+    });
+}
