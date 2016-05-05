@@ -45,12 +45,12 @@ table {
 }
 
 .btn-primary {
-	background-color: rgba($primary_color, 0.8);
-	border-color: $primary_color;
+	background-color: rgba($primary_color, 0.8)!important;
+	border-color: $primary_color!important;
 
-	&:hover, &:focus {
-		background-color: $primary_color;
-		border-color: mix($primary_color, #000000, 70);
+	&:hover, &:focus, &:active {
+		background-color: $primary_color!important;
+		border-color: mix($primary_color, #000000, 70)!important;
 	}
 }
 
