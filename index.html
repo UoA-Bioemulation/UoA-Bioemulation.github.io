@@ -124,6 +124,8 @@
 
     <script src="js/utils.min.js"></script>
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <script type="text/javascript">
     var query_params = [];
 
@@ -158,7 +160,7 @@
     var load_query_params = function(page) {
         if(page === undefined)
             page = window.location.hash.substr(2);
-        
+
         query_params = [];
         if(page.indexOf("?") > -1) {
             var params_str = page.substr(page.indexOf("?")+1);

@@ -153,6 +153,10 @@ nav {
 			max-width: 80%;
 			margin-left: auto;
 			margin-right: auto;
+
+			&.forced {
+				width: 80%;
+			}
 		}
 
 		&.picture-left, &.picture-right {
@@ -161,6 +165,10 @@ nav {
 			float: right;
 			margin-top: 0px;
 			margin-bottom: 0px;
+
+			&.forced {
+				width: 50%;
+			}
 
 			&.picture-left {
 				margin-right: 10px;
@@ -178,6 +186,14 @@ nav {
 
 		img {
 			max-height: 200px;
+		}
+	}
+
+	&.max-100 {
+		max-height: 100px;
+
+		img {
+			max-height: 100px;
 		}
 	}
 }
