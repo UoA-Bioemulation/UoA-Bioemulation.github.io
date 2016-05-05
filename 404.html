@@ -154,32 +154,8 @@
         $.getScript(javascript_page);
     }
 
-    var load_query_params = function(page) {
-        if(page === undefined)
-            page = window.location.hash.substr(2);
-
-        query_params = [];
-        if(page.indexOf("?") > -1) {
-            var params_str = page.substr(page.indexOf("?")+1);
-
-            var params = params_str.split("&");
-            for(var i=0; i<params.length; i++) {
-                var index = params[i].indexOf("=");
-                if(index > -1) {
-                    query_params[params[i].substr(0, index)] = params[i].substr(index+1);
-                }
-            }
-
-            page = page.substr(0, page.indexOf("?"));
-        }
-
-        return page;
-    }
-
     var load_from_hash = function() {
         var page = "404";
-
-        page = load_query_params(page);
 
         load_content(page);
     }
