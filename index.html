@@ -191,7 +191,8 @@
         load_from_hash();
 
         $(".navbar-nav").find("a").click(function() {
-            $(".navbar-toggle").click();
+            if($(".navbar-collapse").hasClass("in"))
+                $(".navbar-toggle").click();
         });
 
         $(window).on('hashchange', function() {
