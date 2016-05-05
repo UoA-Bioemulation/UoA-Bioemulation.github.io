@@ -190,6 +190,10 @@
     $(function() {
         load_from_hash();
 
+        $(".navbar-nav").find("a").click(function() {
+            $(".navbar-toggle").click();
+        });
+
         $(window).on('hashchange', function() {
             load_from_hash();
         });
