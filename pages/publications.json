@@ -26,6 +26,27 @@
         ]
     },
     {
+        "type": "proceedings",
+        "key": "date2016validation",
+        "author": "Weiwei Ai, Nitish Patel and Partha Roop",
+        "title": "Requirements-Centric Closed-Loop Validation of Implantable Cardiac Devices",
+        "booktitle": "Design Automation and Test in Europe, 2016. DATE '16",
+        "year": "2016",
+        "month": "mar",
+        "location": "Dresden, Germany",
+        "numpages": "4",
+        "links": {
+        },
+        "our_authors": [
+            "wai",
+            "npat",
+            "proop"
+        ],
+        "our_projects": [
+            "validation"
+        ]
+    },
+    {
         "type": "journal",
         "key": "tse2016",
         "author": "",
@@ -49,21 +70,6 @@
         "number": "",
         "year": "",
         "month": "",
-        "links": {
-        },
-        "our_authors": [
-        ]
-    },
-    {
-        "type": "proceedings",
-        "key": "date2016validation",
-        "author": "",
-        "title": "Weiwei's DATE paper",
-        "booktitle": "DATE 16",
-        "year": "2016",
-        "month": "mar",
-        "location": "Dresden, Germany",
-        "numpages": "4",
         "links": {
         },
         "our_authors": [
