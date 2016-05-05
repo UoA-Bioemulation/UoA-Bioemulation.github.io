@@ -49,7 +49,7 @@ function changeTab(page) {
             $("#research_holder").html(html);
 
             $(".sort_change").click(function() {
-                window.history.pushState({}, document.title, "/#!research?project=" + page + "&sort=" + $(this).data("sort"));
+                window.history.pushState({}, document.title, $(this).attr("href"));
                 load_query_params();
                 loadPublications(page);
 
