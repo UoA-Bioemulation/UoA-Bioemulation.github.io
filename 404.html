@@ -50,26 +50,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img class="navbar-img" src="/img/logo/bioremulation.svg"/></a>
+                <a class="navbar-brand" href="/#"><img class="navbar-img" src="/img/logo/bioremulation.svg"/></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#"></a>
+                    <li>
+                        <a href="/#!downloads">Downloads</a>
                     </li>
                     <li>
-                        <a href="#!downloads">Downloads</a>
+                        <a href="/#!research">Research</a>
                     </li>
                     <li>
-                        <a href="#!research">Research</a>
+                        <a href="/#!publications">Publications</a>
                     </li>
                     <li>
-                        <a href="#!publications">Publications</a>
-                    </li>
-                    <li>
-                        <a href="#!members">Members</a>
+                        <a href="/#!members">Members</a>
                     </li>
                 </ul>
             </div>
@@ -180,10 +177,7 @@
     }
 
     var load_from_hash = function() {
-        var page = window.location.hash.substr(2);
-        if (page.length == 0) {
-            page = "home";
-        }
+        var page = "404";
 
         page = load_query_params(page);
 
@@ -192,10 +186,6 @@
 
     $(function() {
         load_from_hash();
-
-        $(window).on('hashchange', function() {
-            load_from_hash();
-        });
     })
     </script>
 </body>
