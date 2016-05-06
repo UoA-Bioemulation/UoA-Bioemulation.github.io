@@ -48,61 +48,70 @@
     },
     {
         "type": "journal",
-        "key": "tse2016",
-        "author": "",
-        "title": "TSE 2016 Codegen",
-        "journal": "TSE",
+        "key": "malik16-hybrid-poc",
+        "author": "Avinash Malik, Partha S Roop, Sidharta Andalam, Eugene Yip and Mark Trew",
+        "title": "A synchronous rendering of hybrid systems for designing Plant-on-a-Chip (PoC)",
+        "journal": "CoRR",
+        "year": "2015",
+        "volume": "abs/1510.04336",
+        "links": {
+            "URL": "http://arxiv.org/abs/1510.04336"
+        },
+        "our_authors": [
+            "amal",
+            "proop",
+            "sand",
+            "eyip",
+            "mtrew"
+        ],
+        "our_projects": [
+            "exooc"
+        ]
+    },
+    {
+        "type": "journal",
+        "key": "yip16-towards-emulation",
+        "author": "Eugene Yip, Sidharta Andalam, Partha S. Roop, Avinash Malik, Mark Trew, Weiwei Ai and Nitish Patel",
+        "title": "Towards the Emulation of the Cardiac Conduction System for Pacemaker Testing",
+        "journal": "CoRR",
         "year": "2016",
-        "volume": "",
-        "month": "",
-        "pages": "",
+        "volume": "abs/1603.05315",
         "links": {
+            "URL": "http://arxiv.org/abs/1603.05315"
         },
         "our_authors": [
-        ]
-    },
-    {
-        "type": "techreport",
-        "key": "uoa-techreport-heart",
-        "author": "",
-        "title": "Eugene's Report",
-        "institution": "Faculty of Engineering, University of Auckland",
-        "number": "",
-        "year": "",
-        "month": "",
-        "links": {
-        },
-        "our_authors": [
+            "eyip",
+            "sand",
+            "proop",
+            "amal",
+            "mtrew",
+            "wai",
+            "npat"
+        ],
+        "our_projects": [
+            "modelling"
         ]
     },
     {
         "type": "proceedings",
-        "key": "embs-16-spacex",
-        "author": "",
-        "title": "Sid's SpacEx Letter",
-        "booktitle": "",
-        "year": "",
-        "month": "",
-        "location": "",
-        "numpages": "",
+        "key": "arch-16-spacex",
+        "author": "Sidharta Andalam, Avinash Malik, Partha S. Roop and Mark Trew",
+        "title": "Hybrid Automata Model of the Heart for Formal Verification of Pacemakers",
+        "booktitle": "Applied Verification for Continuous and Hybrid Systems, 2016. ARCH '16",
+        "year": "2016",
+        "month": "apr",
+        "location": "Vienna, Austria",
         "links": {
         },
         "our_authors": [
-        ]
-    },
-    {
-        "type": "proceedings",
-        "key": "slides",
-        "author": "",
-        "title": "Slides To Be Added",
-        "booktitle": "",
-        "year": "",
-        "month": "",
-        "location": "",
-        "numpages": "",
-        "links": {
-        },
-        "our_authors": [
+            "sand",
+            "amal",
+            "proop",
+            "mtrew"
+        ],
+        "our_projects": [
+            "modelling",
+            "validation"
         ]
     }
 ]
