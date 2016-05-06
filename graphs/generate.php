@@ -1,6 +1,6 @@
 <?php
 
-define("PER_ROW", 5);
+define("PER_ROW", 3);
 define("MAX_DP", 2);
 
 if($argc !== 2) {
@@ -30,8 +30,14 @@ for($i=0; $i<sizeof($data); $i++) {
         $valid = true;
 
         for($j=0; $j<sizeof($data[$i]); $j++) {
-            if(!is_numeric($data[$i][$j]))
-                $valid = false;
+            if(is_numeric($data[$i][$j]))
+                continue;
+
+            if(is_null($data[$i][$j]) || strlen($data[$i][$j]) === 0)
+                continue;
+
+            $valid = false;
+            break;
         }
 
         if($valid) {
@@ -41,15 +47,21 @@ for($i=0; $i<sizeof($data); $i++) {
                 $max_len = array_fill(0, sizeof($tmp), 0);
             }
 
-            for($j=0; $j<sizeof($tmp); $j++) {
-                $tmp[$j] = round($tmp[$j], MAX_DP);
+            if(sizeof($tmp) === sizeof($max_len)) {
+                for($j=0; $j<sizeof($tmp); $j++) {
+                    if(is_numeric($tmp[$j]))
+                        $tmp[$j] = (string)round($tmp[$j], MAX_DP);
 
-                $len = strlen((string)$tmp[$j]);
-                if($len > $max_len[$j])
-                    $max_len[$j] = $len;
+                    if(is_null($tmp[$j]) || strlen($tmp[$j]) === 0)
+                        $tmp[$j] = "null";;
+
+                    $len = strlen($tmp[$j]);
+                    if($len > $max_len[$j])
+                        $max_len[$j] = $len;
+                }
+
+                $sorted[] = $tmp;    
             }
-
-            $sorted[] = $tmp;
         }
     }
 }
@@ -69,7 +81,7 @@ for($i=0; $i<sizeof($sorted); $i++) {
         if($j > 0)
             $output .= ", ";
 
-        $str = (string) $sorted[$i][$j];
+        $str = $sorted[$i][$j];
 
         while(strlen($str) < $max_len[$j]) {
             $str = " " . $str;
