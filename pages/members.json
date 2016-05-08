@@ -78,13 +78,14 @@
     {
         "key": "sand",
         "name": "Sidharta Andalam",
-        "photo": "",
+        "photo": "http://pretzel.ece.auckland.ac.nz/wp-uploads/2013/02/sid-Large-225x300.jpg",
         "position": "Postdoctoral Researcher",
         "role": "member",
         "contact": {
-            "email": "sand080@aucklanduni.ac.nz"
+            "email": "sid.andalam@aucklanduni.ac.nz"
         },
         "info": {
+            "background": "Sidharta Andalam is currently working on the Heart-on-FPGA research group in the Department of Electrical and Computer Engineering, University of Auckland. His principle research is on emulating the electrical conduction system of the heart for validation of medical devices such as cardiac pacemakers. <br /><br /> Sidharta Andalam received his Ph.D from University of Auckland in 2013, where his thesis focused on developing a predictable platform for safety-critical systems. During his Ph.D., he has worked with University of California, Berkeley on Precision Timed (PRET) processors. He has worked at INRIA, France on language semantics, abstract interpretation and static analysis and worked at Christian-Albrechts-University, Kiel, Germany on designing and analysis of reactive processors. Furthermore, he enjoys collabration with the members of Advanced Formal Methods for Embedded Systems (AFMES) program, supported by INRIA, France and with the members of Center for Hybrid and Embedded Software Systems (Chess) at University of California, Berkeley. His research was focused on designing synchronous languages, time predictable reactive processors and developed a model checking based timing analyser for verifying timing constraints.  He has developed new techniques for statically analysing caches and scratchpads for computing an upper bound on the worst case execution time of a program. Furthermore, Sidharta developed reactive processors for executing synchronous languages called Esterel and PRET-C, and worked on FPGA based hardware accelerators for reducing the worst case execution time of a program while maintaining predictability.<br /><br />In 2014-15, Sidharta Andalam worked as a research fellow in embedded systems group at TUM CREATE, Singapore. TUM CREATE is a research programme for developing innovative technologies, for design and application of electric vehicles (EVs). He researched on design, implementation and analysis of safety-critical automotive applications. Using a time triggered Ethernet, he investigated task distribution and migration in heterogeneous multi-core architecture."
         }
     },
     {

@@ -1,4 +1,29 @@
 [
+{
+    "type": "proceedings",
+    "key": "embc2016-sand",
+    "author": "Sidartha Andalam, Harshavardhan Ramanna, Avinash Malik, Parthasarathi Roop, Nitish Patel, Mark L. Trew",
+    "title": "Hybrid Automata Models of Cardiac Ventricular Electrophysiology for Real-Time Computational Applications",
+    "booktitle": "(to appear in) IEEE Engineering in Medicine and Biology Society (EMBC)",
+    "year": "2016",
+    "month": "aug",
+    "location": "Florida, USA",
+    "links": {
+    },
+    "our_authors": [
+        "sand",
+        "hram",
+        "amal",
+        "proop",
+        "npat",
+        "mtre"
+    ],
+    "our_projects": [
+        "exooc",
+        "validation",
+        "modelling"
+    ]
+},
     {
         "type": "proceedings",
         "key": "date2016codegen",
@@ -47,7 +72,7 @@
         ]
     },
     {
-        "type": "journal",
+        "type": "article",
         "key": "malik16-hybrid-poc",
         "author": "Avinash Malik, Partha S Roop, Sidharta Andalam, Eugene Yip and Mark Trew",
         "title": "A synchronous rendering of hybrid systems for designing Plant-on-a-Chip (PoC)",
@@ -69,7 +94,7 @@
         ]
     },
     {
-        "type": "journal",
+        "type": "article",
         "key": "yip16-towards-emulation",
         "author": "Eugene Yip, Sidharta Andalam, Partha S. Roop, Avinash Malik, Mark Trew, Weiwei Ai and Nitish Patel",
         "title": "Towards the Emulation of the Cardiac Conduction System for Pacemaker Testing",
