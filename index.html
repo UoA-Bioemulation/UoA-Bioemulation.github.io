@@ -140,6 +140,8 @@
         .done(function(data) {
             $("#content_pane").html(data);
             $("#loading_pane").hide();
+
+            initPage();
         })
         .fail(function() {
             if (page != "error404") {
@@ -148,6 +150,8 @@
             else {
                 $("#content_pane").html("Unknown error.");
                 $("#loading_pane").hide();
+
+                initPage();
             }
         });
 
