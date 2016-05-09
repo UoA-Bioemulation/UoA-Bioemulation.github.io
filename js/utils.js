@@ -36,7 +36,7 @@ function getMonthForShort(mon) {
 
 function getPaperTypeForKey(key) {
     switch(key) {
-        case "journal": return "Journal Article";
+        case "article": return "Journal Article";
         case "proceedings": return "Conference";
         case "techreport": return "Technical Report";
         default: return make_nice_header(key);
@@ -398,7 +398,7 @@ function getStringForPublication(publication) {
         str = getReferenceForProceeding(publication);
         bibtex = getBibtexForProceeding(publication, bibtex_key);
     }
-    else if("type" in publication && publication["type"] === "journal") {
+    else if("type" in publication && publication["type"] === "article") {
         str = getReferenceForArticle(publication);
         bibtex = getBibtexForArticle(publication, bibtex_key);
     }
