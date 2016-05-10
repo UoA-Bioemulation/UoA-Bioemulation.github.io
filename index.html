@@ -15,7 +15,7 @@
     <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="/img/favicon/favicon-128.png" sizes="128x128" />
 
-    <title>Centre for Bio-remulation - The University of Auckland</title>
+    <title>BioRemulation Research Group - The University of Auckland</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-sm-4 text-center" style="margin-bottom: 25px;">
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> Partha Roop: (+64) 9 3737599 EXT:85583</li>
+                        <li><i class="fa fa-phone fa-fw"></i> Partha Roop: (+64) 9 923 5583</li>
                         <li>
                             <i class="fa fa-envelope-o fa-fw"></i>  Partha Roop: <a href="mailto:p.roop@auckland.ac.nz">p.roop@auckland.ac.nz</a>
                         </li>
@@ -107,7 +107,7 @@
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2 text-center">
                     <hr class="small no-margin-top" style="margin-bottom: 25px;">
-                    <p class="text-muted">Copyright &copy; Centre for Bio-remulation 2016</p>
+                    <p class="text-muted">Copyright &copy; BioRemulation™ Research Group 2016</p>
                 </div>
             </div>
         </div>
@@ -140,6 +140,8 @@
         .done(function(data) {
             $("#content_pane").html(data);
             $("#loading_pane").hide();
+
+            initPage();
         })
         .fail(function() {
             if (page != "error404") {
@@ -148,6 +150,8 @@
             else {
                 $("#content_pane").html("Unknown error.");
                 $("#loading_pane").hide();
+
+                initPage();
             }
         });
 
