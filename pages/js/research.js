@@ -3,7 +3,7 @@ var current_page = undefined;
 var project = query_params["project"];
 
 if(project === undefined)
-    project = "exooc";
+    project = "ooc";
 
 changeTab(project);
 
