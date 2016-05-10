@@ -2,50 +2,66 @@
     {
         "key": "proop",
         "name": "Partha Roop",
-        "photo": "http://pretzel.ece.auckland.ac.nz/wp-uploads/2013/02/partha1_small.jpg",
-        "position": "Senior Lecturer",
+        "photo": "https://unidirectory.auckland.ac.nz/people/imageraw/p-roop/10290280/biggest",
+        "position": "Associate Professor",
         "role": "leader",
         "contact": {
-            "phone": "+64 9 3737599 EXT:85583",
-            "fax": "+64 9 3737461",
-            "email": "p.roop@auckland.ac.nz"
+            "phone": "+64 9 923 5583",
+            "fax": "+64 9 373 7461",
+            "email": "p.roop@auckland.ac.nz",
+            "unidirectory": "https://unidirectory.auckland.ac.nz/profile/p-roop"
         },
         "info": {
-            "background": "I did a PhD in Computer Science and Engineering from the University of New South Wales, Sydney, Australia, an M. Tech from Indian Institute of Technology in Kharagpur, India and a B. E degree from Anna University (College of Engineering), Madras, India.",
-            "research_interests": "My main research interests is in the area of real-time embedded systems. These are ubiquitous computing systems that have challenging design issues in both hardware and software fronts. Of particular interest to me are systems in industrial control such as airport baggage handling and other complex material handling systems. I am also looking at several design challenges in embedded systems such as the static timing analysis of embedded code, design of processors that guarantee precise timing and the design of complex systems on a chip (SoC) by automatically combining many pre-verified IP blocks. An interesting project that combines many of these challenges is the design of interactive indoor sports environments and we are developing such environments at UoA. I have proposed a family of processors called reactive processors which are specifically designed for reactive embedded applications."
+            "background": "Partha Roop is the Computer Systems Engineering programme director in the Department of Electrical and Computer Engineering at the University of Auckland, New Zealand. He completed his PhD in Computer Science and Engineering at the University of New South Wales, Sydney, Australia, a M.Tech at Indian Institute of Technology in Kharagpur, India and a BE degree at Anna University (College of Engineering), Madras, India. Partha had visiting positions in Kiel University, Germany (collaboration with the <a href=\"http://www.rtsys.informatik.uni-kiel.de/en\" target=\"blank\">Embedded Systems Group</a>, French National Laboratory of Informatics and Control (<a href=\"https://team.inria.fr/spades/\" target=\"blank\">SPADES team Grenoble</a>), and <a href=\"http://www.ece.iastate.edu\" target=\"_blank\">Iowa State University</a>. He collaborates with University of California, Berkeley in the <a href=\"https://chess.eecs.berkeley.edu/pret/\" target=\"blank\">PRET project</a>.",
+            "research_interests": "<ul><li>Real-Time Systems</li><li>Computer Engineering for Biological Systems (cyber-biological systems)</li><li>Software Engineering for web / cloud services</li><li>Medical Devices</li><li>Heart Modelling and Pacemakers</li><li>Intelligent Transportation Systems</li><li>Industrial Automation.</li></ul>"
         }
     },
     {
         "key": "amal",
         "name": "Avinash Malik",
-        "photo": "",
+        "photo": "https://unidirectory.auckland.ac.nz/people/imageraw/avinash-malik/10399875/biggest",
         "position": "Lecturer",
         "role": "member",
         "contact": {
-            "email": "avinash.malik@auckland.ac.nz"
+            "phone": "+64 9 923 9231",
+            "email": "avinash.malik@auckland.ac.nz",
+            "unidirectory": "https://unidirectory.auckland.ac.nz/profile/avinash-malik"
         },
         "info": {
+            "background": "Avinash obtained his BE (Hons I) and PhD from the University of Auckland in 2010. He then worked as a post-doctoral fellow at INRIA Grenoble, the French Institute for Research in Computer Science and Automation. His work as a post-doctoral fellow continued at Trinity College Dublin, Ireland in the department of computer science and statistics, after which he then took a role as a research scientist at IBM Research. He joined the University of Auckland in May 2013.",
+            "research_interests": "<ul><li>Real-time systems</li><li>Embedded systems</li><li>Compiler construction</li><li>Programming language semantics</li><li>Logic for program verification</li><li>Formal methods application to bioengineering</li></ul>"
         }
     },
     {
         "key": "mtrew",
         "name": "Mark Trew",
-        "photo": "",
-        "position": "Senior Lecturer",
+        "photo": "https://unidirectory.auckland.ac.nz/people/imageraw/m-trew/10307474/biggest",
+        "position": "Senior Research Fellow",
         "role": "member",
         "contact": {
-            "email": "m.trew@auckland.ac.nz"
+            "phone": "+64 9 923 5114",
+            "email": "m.trew@auckland.ac.nz",
+            "unidirectory": "https://unidirectory.auckland.ac.nz/profile/m-trew"
         },
         "info": {
+            "background": [
+                "Mark Trew attained a Bachelor of Engineering in Engineering Science in 1992 and a PhD Engineering Science in 1999, both from the University of Auckland. He is currently a Senior Research Fellow at the Auckland Bioengineering Institute.",
+                "From 1999 to 2001 Mark worked as a Research Engineer for Auckland UniServices on contract to PB Power Genzel NZ and Japan Petroleum Exploration Corporation, devising methods for predicting geothermal tracer chemical behaviour at high-temperatures. He joined the Bioengineering Group in 2001 and from 1999 to 2003 he also held part-time lecturing appointments in the Department of Engineering Science."
+            ],
+            "research_interests": [
+                "Mark constructs computer models and analysis tools for interpreting and understanding detailed images of cardiac tissue and cardiac electrical activity. His research interests include:",
+                "<ul><li>Cardiac electrical rhythm</li><li>Tissue response to electric shock</li><li>Computational techniques for simulating cardiac electrical behaviour</li><li>Mathematical descriptions of cardiac tissue structure</li></ul>"
+            ]
         }
     },
     {
         "key": "npat",
         "name": "Nitish Patel",
         "photo": "",
-        "position": "Lecturer",
+        "position": "Senior Lecturer",
         "role": "member",
         "contact": {
+            "phone": "+64 9 923 8196",
             "email": "nd.patel@auckland.ac.nz"
         },
         "info": {
@@ -54,45 +70,67 @@
     {
         "key": "fsun",
         "name": "Frederick Sundram",
-        "photo": "",
+        "photo": "https://unidirectory.auckland.ac.nz/people/imageraw/f-sundram/10347047/biggest",
         "position": "Senior Lecturer",
         "role": "member",
         "contact": {
-            "email": "f.sundram@auckland.ac.nz"
+            "phone": "+64 9 923 7521",
+            "email": "f.sundram@auckland.ac.nz",
+            "unidirectory": "https://unidirectory.auckland.ac.nz/profile/f-sundram"
         },
         "info": {
+            "background": [
+                "I am currently a Senior Lecturer at the Department of Psychological Medicine at the University of Auckland and a Consultant Liaison Psychiatrist at North Shore Hospital. I was a research fellow at the Department of Forensic and Neurodevelopmental Science at the Institute of Psychiatry, King’s College London and the Royal College of Surgeons in Ireland where I completed my PhD in Neuroimaging. I have also completed a Masters in Healthcare Management from the Institute of Public Administration, Dublin and more recently, a Masters in Healthcare Informatics. My research interests include neuroimaging, neurodevelopmental disorders, suicide, epilepsy, psychosis, medically unexplained physical symptoms, healthcare informatics and psychopathy."
+            ],
+            "research_interests": [
+                "<ul><li>Neuroimaging</li><li>Magnetic Resonance Imaging methods</li><li>Liaison Psychiatry</li></ul>"
+            ]
         }
     },
     {
         "key": "mnad",
         "name": "Muhammad Nadeem",
-        "photo": "",
-        "position": "Lecturer",
+        "photo": "https://unidirectory.auckland.ac.nz/people/imageraw/muhammad-nadeem/10287384/biggest",
+        "position": "Professional Teaching Fellow",
         "role": "member",
         "contact": {
-            "email": "muhammad.nadeem@auckland.ac.nz"
+            "phone": "+64 9 373 7999",
+            "email": "muhammad.nadeem@auckland.ac.nz",
+            "unidirectory": "https://unidirectory.auckland.ac.nz/profile/muhammad-nadeem"
         },
         "info": {
+            "background": [
+                "Muhammad Nadeem received his BSc Engineering degree in Electrical and electronics from University of Engineering and Technology, Lahore, Pakistan. in 1998. He received his MSc Engineering degree from Royal Institute of Technology, Sweden, in 2003. He obtained the PhD degree from the Department of Electrical and Computer Engineering at University of Auckland in 2012.",
+                "He worked for University of Neuchatel and Microlab in Switzerland between 2002 and 2004. From 2004 to 2008 and 2012 to 2014, he worked as Lecturer and Assistant Professor at the COMSATS Institute of Technology, Pakistan.",
+                "He joined  the Department of Electrical and Computer Engineering at The University of Auckland in February 2014 as a Professional Teaching Fellow."
+            ],
+            "research_interests": [
+                "<ul><li>Digital System Design</li><li>FPGAs </li><li>Real-Time Embedded Systems</li><li>Computer Architectures</li><li>Internet of Things</li><li>Medical Devices and Systems</li><li>Industrial Automation</li><li>Safety Critical Java Systems</li></ul>"
+            ]
         }
     },
     {
         "key": "sand",
         "name": "Sidharta Andalam",
         "photo": "http://pretzel.ece.auckland.ac.nz/wp-uploads/2013/02/sid-Large-225x300.jpg",
-        "position": "Postdoctoral Researcher",
+        "position": "Research Fellow",
         "role": "member",
         "contact": {
             "email": "sid.andalam@aucklanduni.ac.nz"
         },
         "info": {
-            "background": "Sidharta Andalam is currently working on the Heart-on-FPGA research group in the Department of Electrical and Computer Engineering, University of Auckland. His principle research is on emulating the electrical conduction system of the heart for validation of medical devices such as cardiac pacemakers. <br /><br /> Sidharta Andalam received his Ph.D from University of Auckland in 2013, where his thesis focused on developing a predictable platform for safety-critical systems. During his Ph.D., he has worked with University of California, Berkeley on Precision Timed (PRET) processors. He has worked at INRIA, France on language semantics, abstract interpretation and static analysis and worked at Christian-Albrechts-University, Kiel, Germany on designing and analysis of reactive processors. Furthermore, he enjoys collabration with the members of Advanced Formal Methods for Embedded Systems (AFMES) program, supported by INRIA, France and with the members of Center for Hybrid and Embedded Software Systems (Chess) at University of California, Berkeley. His research was focused on designing synchronous languages, time predictable reactive processors and developed a model checking based timing analyser for verifying timing constraints.  He has developed new techniques for statically analysing caches and scratchpads for computing an upper bound on the worst case execution time of a program. Furthermore, Sidharta developed reactive processors for executing synchronous languages called Esterel and PRET-C, and worked on FPGA based hardware accelerators for reducing the worst case execution time of a program while maintaining predictability.<br /><br />In 2014-15, Sidharta Andalam worked as a research fellow in embedded systems group at TUM CREATE, Singapore. TUM CREATE is a research programme for developing innovative technologies, for design and application of electric vehicles (EVs). He researched on design, implementation and analysis of safety-critical automotive applications. Using a time triggered Ethernet, he investigated task distribution and migration in heterogeneous multi-core architecture."
+            "background": [
+                "Sidharta Andalam is currently working on the Heart-on-FPGA research group in the Department of Electrical and Computer Engineering, University of Auckland. His principle research is on emulating the electrical conduction system of the heart for validation of medical devices such as cardiac pacemakers.",
+                "Sidharta Andalam received his Ph.D from University of Auckland in 2013, where his thesis focused on developing a predictable platform for safety-critical systems. During his Ph.D., he has worked with University of California, Berkeley on Precision Timed (PRET) processors. He has worked at INRIA, France on language semantics, abstract interpretation and static analysis and worked at Christian-Albrechts-University, Kiel, Germany on designing and analysis of reactive processors. Furthermore, he enjoys collabration with the members of Advanced Formal Methods for Embedded Systems (AFMES) program, supported by INRIA, France and with the members of Center for Hybrid and Embedded Software Systems (Chess) at University of California, Berkeley. His research was focused on designing synchronous languages, time predictable reactive processors and developed a model checking based timing analyser for verifying timing constraints.  He has developed new techniques for statically analysing caches and scratchpads for computing an upper bound on the worst case execution time of a program. Furthermore, Sidharta developed reactive processors for executing synchronous languages called Esterel and PRET-C, and worked on FPGA based hardware accelerators for reducing the worst case execution time of a program while maintaining predictability.",
+                "In 2014-15, Sidharta Andalam worked as a research fellow in embedded systems group at TUM CREATE, Singapore. TUM CREATE is a research programme for developing innovative technologies, for design and application of electric vehicles (EVs). He researched on design, implementation and analysis of safety-critical automotive applications. Using a time triggered Ethernet, he investigated task distribution and migration in heterogeneous multi-core architecture."
+            ]
         }
     },
     {
         "key": "nall",
         "name": "Nathan Allen",
         "photo": "",
-        "position": "PhD Student",
+        "position": "Doctoral Candidate",
         "role": "member",
         "contact": {
             "email": "nall426@aucklanduni.ac.nz"
@@ -116,7 +154,7 @@
         "key": "wai",
         "name": "Weiwei Ai",
         "photo": "",
-        "position": "PhD Student",
+        "position": "Doctoral Candidate",
         "role": "member",
         "contact": {
             "email": "wai484@aucklanduni.ac.nz"
@@ -128,7 +166,7 @@
         "key": "mkuo",
         "name": "Matthew Kuo",
         "photo": "",
-        "position": "PhD Student",
+        "position": "Doctoral Candidate",
         "role": "member",
         "contact": {
             "email": "mkuo005@aucklanduni.ac.nz"
@@ -140,7 +178,7 @@
         "key": "hram",
         "name": "Harshavardhan Ramanna",
         "photo": "",
-        "position": "",
+        "position": "Research Programmer",
         "role": "member",
         "contact": {
         },
