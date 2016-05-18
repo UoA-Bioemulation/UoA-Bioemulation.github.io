@@ -156,6 +156,7 @@
         });
 
         $.getScript(javascript_page);
+        ga('send', 'pageview', location.pathname + location.search  + location.hash);
     }
 
     var load_query_params = function(page) {
@@ -212,8 +213,6 @@
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
         ga('create', 'UA-77532514-1', 'auto');
-        ga('send', 'pageview');
-
     </script>
 </body>
 
