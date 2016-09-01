@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 540 100" style="enable-background:new 0 0 540 100;" xml:space="preserve">
+<style type="text/css">
+	.symbol_fill{fill:#E53935;}
+	.tm{stroke:#E53935;stroke-width:2;stroke-miterlimit:10;}
+	.symbol_line{stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<defs>
+	<clipPath id="heart_clip">
+		<path d="M48,25
+	        a26,25 0 1 1 52,0
+			s0,50 -70,75
+			q0,-20 -15,-37.5
+			t-15,-37.5
+	        a26,25 0 1 1 52,0
+	        z"/>
+	</clipPath>
+</defs>
+<g clip-path="url(#heart_clip)">
+	<path class="symbol_fill" d="M0,0
+		l100,0
+		l0,100
+		l-100,0
+		l0,-100
+		z"/>
+	<g clip-path="url(#heart_clip)">
+		<path class="symbol_line symbol_fill" d="M30,95
+			l10,-10
+			a1.5,1.5 0 1 0 -0.001, -0.001
+			l-10,10
+			z"/>
+
+		<path class="symbol_line symbol_fill" d="M20,90
+			l15,-15
+			l20,0
+			a1.5,1.5 0 1 0 0,-0.001
+			l-20,0
+			l-20,20
+			z"/>
+
+		<path class="symbol_line symbol_fill" d="M0,35
+			l30,30
+			l15,0
+			a1.5,1.5 0 1 0 0,-0.001
+			l-15,0
+			l-30,-30
+			z"/>
+
+		<path class="symbol_line symbol_fill" d="M-10,10
+			l45,45
+			l20,0
+			l45,45
+			l-45,-45
+			l-20,0
+			l-45,-45
+			z"/>
+
+		<path class="symbol_line symbol_fill" d="M100,85
+			l-40,-40
+			l-20,0
+			l-10,-10
+			a1.5,1.5 0 1 0 -0.001,0.001
+			l10,10
+			l20,0
+			l40,40
+			z"/>
+
+		<path class="symbol_line symbol_fill" d="M10,0
+			l30,30
+			a1.5,1.5 0 1 0 0.001,-0.001
+			l-30,-30
+			z"/>
+
+		<path class="symbol_line symbol_fill" d="M100,30
+			l-10,0
+			l-15,15
+			a1.5,1.5 0 1 0 0.001,0.001
+			l15,-15
+			l10,0
+			z"/>
+
+		<path class="symbol_line symbol_fill" d="M100,5
+			l-30,30
+			l-15,0
+			a1.5,1.5 0 1 0 0,0.001
+			l15,0
+			l30,-30
+			z"/>
+
+		<path class="symbol_line symbol_fill" d="M80,10
+			l-15,15
+			a1.5,1.5 0 1 0 0.001,0.001
+			l15,-15
+			a1.5,1.5 0 1 0 -0.001,-0.001
+			z"/>
+	</g>
+</g>
+<g>
+	<!-- T -->
+	<path class="tm symbol_fill" d="M78,91
+		l10,0
+		l-5,0
+		l0,8
+		l0,-8
+		l-5,0
+		z" />
+
+	<!-- M -->
+	<path class="tm symbol_fill" d="M91,91
+		l3,5
+		l3,-5
+		l1,0
+		l0,8
+		l0,-8
+		l-1,0
+		l-3,5
+		l-3,-5
+		l-1,0
+		l0,8
+		l0,-8
+		l1,0
+		z" />
+</g>
+
+<g>
+	<text x="330" y="34" style="fill:black;" text-anchor="middle" font-family="verdana" font-size="24">
+        BioEmulation™ Research Group
+	</text>
+
+	<path class="symbol_line symbol_fill" d="M120,46
+		l420,0
+		l0,8
+		l-420,0
+		l0,-8
+		z"/>
+
+	<text x="330" y="84" style="fill:black;" text-anchor="middle" font-family="verdana" font-size="24">The University of Auckland</text>
+</g>
+</svg>
