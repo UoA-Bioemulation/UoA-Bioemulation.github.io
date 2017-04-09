@@ -1,29 +1,53 @@
 [
-{
-    "type": "proceedings",
-    "key": "embc2016-sand",
-    "author": "Sidartha Andalam, Harshavardhan Ramanna, Avinash Malik, Parthasarathi Roop, Nitish Patel, Mark L. Trew",
-    "title": "Hybrid Automata Models of Cardiac Ventricular Electrophysiology for Real-Time Computational Applications",
-    "booktitle": "(to appear in) IEEE Engineering in Medicine and Biology Society (EMBC)",
-    "year": "2016",
-    "month": "aug",
-    "location": "Florida, USA",
-    "links": {
-    },
-    "our_authors": [
-        "sand",
-        "hram",
-        "amal",
-        "proop",
-        "npat",
-        "mtre"
-    ],
-    "our_projects": [
-        "exooc",
-        "validation",
-        "modelling"
-    ]
-},
+	{
+		"type": "article",
+		"key": "tbme2017-wai",
+		"author": "Weiwei Ai, Nitish D. Patel, Partha S. Roop, Avinash Malik, Sidharta Andalam, Eugene Yip, Nathan Allen, Mark L. Trew",
+		"title": "A parametric computational model of the action potential of pacemaker cells",
+		"journal": "IEEE Transactions on Biomedical Engineering (TBME)",
+        "year": "2017",
+        "volume": "64",
+		"links": {
+		},
+		"our_authors": [
+			"wai",
+			"npat",
+			"proop",
+			"amal",
+			"sand",
+			"eyip",
+			"nall",
+			"mtre"
+		],
+		"our_projects": [
+			"modelling"
+		]
+	},
+	{
+		"type": "proceedings",
+		"key": "embc2016-sand",
+		"author": "Sidartha Andalam, Harshavardhan Ramanna, Avinash Malik, Parthasarathi Roop, Nitish Patel, Mark L. Trew",
+		"title": "Hybrid Automata Models of Cardiac Ventricular Electrophysiology for Real-Time Computational Applications",
+		"booktitle": "(to appear in) IEEE Engineering in Medicine and Biology Society (EMBC)",
+		"year": "2016",
+		"month": "aug",
+		"location": "Florida, USA",
+		"links": {
+		},
+		"our_authors": [
+			"sand",
+			"hram",
+			"amal",
+			"proop",
+			"npat",
+			"mtre"
+		],
+		"our_projects": [
+			"exooc",
+			"validation",
+			"modelling"
+		]
+	},
     {
         "type": "proceedings",
         "key": "date2016codegen",
