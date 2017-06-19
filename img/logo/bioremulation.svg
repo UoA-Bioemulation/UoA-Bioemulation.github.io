@@ -96,32 +96,6 @@
 			z"/>
 	</g>
 </g>
-<g>
-	<!-- T -->
-	<path class="tm symbol_fill" d="M78,91
-		l10,0
-		l-5,0
-		l0,8
-		l0,-8
-		l-5,0
-		z" />
-
-	<!-- M -->
-	<path class="tm symbol_fill" d="M91,91
-		l3,5
-		l3,-5
-		l1,0
-		l0,8
-		l0,-8
-		l-1,0
-		l-3,5
-		l-3,-5
-		l-1,0
-		l0,8
-		l0,-8
-		l1,0
-		z" />
-</g>
 
 <g>
 	<text x="330" y="34" style="fill:black;" text-anchor="middle" font-family="verdana" font-size="24">
