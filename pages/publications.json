@@ -1,5 +1,73 @@
 [
 	{
+		"type": "proceedings",
+		"key": "codes2017-sand",
+		"author": "Sidartha Andalam, Nathan Allen, Avinash Malik, Parthasarathi Roop, Mark L. Trew",
+		"title": "A novel emulation model of the cardiac conduction system",
+		"booktitle": "(to appear in) CODES+ISSS: International Conference on Hardware/Software Codesign and System Synthesis",
+		"year": "2017",
+		"month": "oct",
+		"location": "Seoul, South Korea",
+		"links": {
+		},
+		"our_authors": [
+			"sand",
+            "nall",
+			"amal",
+			"proop",
+			"mtre"
+		],
+		"our_projects": [
+			"ooc",
+			"modelling"
+		]
+	},
+    {
+		"type": "proceedings",
+		"key": "embc2017-wai",
+		"author": "Weiwei Ai, Nitish Patel, Partha Roop, Avinash Malik, Nathan Allen and Mark L. Trew",
+		"title": "An intracardiac electrogram model to bridge virtual hearts and implantable cardiac devices",
+		"booktitle": "39th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC'17)",
+		"year": "2017",
+		"month": "jul",
+		"location": "Jeju Island, South Korea",
+		"links": {
+		},
+		"our_authors": [
+			"wai",
+			"npat",
+			"proop",
+			"amal",
+			"nall",
+			"mtre"
+		],
+		"our_projects": [
+			"ooc",
+			"modelling"
+		]
+	},
+    {
+		"type": "proceedings",
+		"key": "isorc2017-nall",
+		"author": "Nathan Allen, Hammond Pearce, Partha Roop, Reinhard von Hanxleden",
+		"title": "A model driven approach for cardiac pacemaker design using a PRET processor",
+		"booktitle": "20th IEEE International Symposium on Real-Time Computing",
+		"year": "2017",
+		"month": "may",
+		"location": "Toronto, Canada",
+		"links": {
+		},
+		"our_authors": [
+            "nall",
+			"proop"
+		],
+		"our_projects": [
+			"ooc",
+			"validation",
+			"modelling"
+		]
+	},
+    {
 		"type": "article",
 		"key": "tbme2017-wai",
 		"author": "Weiwei Ai, Nitish D. Patel, Partha S. Roop, Avinash Malik, Sidharta Andalam, Eugene Yip, Nathan Allen, Mark L. Trew",
@@ -28,7 +96,7 @@
 		"key": "embc2016-sand",
 		"author": "Sidartha Andalam, Harshavardhan Ramanna, Avinash Malik, Parthasarathi Roop, Nitish Patel, Mark L. Trew",
 		"title": "Hybrid Automata Models of Cardiac Ventricular Electrophysiology for Real-Time Computational Applications",
-		"booktitle": "(to appear in) IEEE Engineering in Medicine and Biology Society (EMBC)",
+		"booktitle": "IEEE Engineering in Medicine and Biology Society (EMBC)",
 		"year": "2016",
 		"month": "aug",
 		"location": "Florida, USA",
@@ -43,7 +111,7 @@
 			"mtre"
 		],
 		"our_projects": [
-			"exooc",
+			"ooc",
 			"validation",
 			"modelling"
 		]
@@ -69,7 +137,7 @@
             "npat"
         ],
         "our_projects": [
-            "exooc",
+            "ooc",
             "validation",
             "modelling"
         ]
@@ -114,7 +182,7 @@
             "mtrew"
         ],
         "our_projects": [
-            "exooc"
+            "ooc"
         ]
     },
     {
