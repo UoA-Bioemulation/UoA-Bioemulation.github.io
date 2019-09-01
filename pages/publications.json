@@ -1,5 +1,25 @@
 [
 	{
+        "type": "article",
+        "key": "ai2019cardiac",
+        "author": "Weiwei Ai, Nitish Dhirubhai Patel, Partha Roop, Avinash Malik and Mark L Trew",
+        "title": "Cardiac Electrical Modeling for Closed-loop Validation of Implantable Devices",
+        "journal": "IEEE Transactions on Biomedical Engineering",
+        "year": "2019",
+        "publisher": "IEEE",
+        "our_authors": [
+            "wai",
+            "npat",
+            "proop",
+            "amal",
+            "mtrew"
+        ],
+		"our_projects": [
+			"validation",
+			"modelling"
+		]
+    },
+    {
 		"type": "proceedings",
 		"key": "codes2017-sand",
 		"author": "Sidartha Andalam, Nathan Allen, Avinash Malik, Parthasarathi Roop, Mark L. Trew",
@@ -15,7 +35,7 @@
             "nall",
 			"amal",
 			"proop",
-			"mtre"
+			"mtrew"
 		],
 		"our_projects": [
 			"ooc",
@@ -39,7 +59,7 @@
 			"proop",
 			"amal",
 			"nall",
-			"mtre"
+			"mtrew"
 		],
 		"our_projects": [
 			"ooc",
@@ -85,7 +105,7 @@
 			"sand",
 			"eyip",
 			"nall",
-			"mtre"
+			"mtrew"
 		],
 		"our_projects": [
 			"modelling"
@@ -108,7 +128,7 @@
 			"amal",
 			"proop",
 			"npat",
-			"mtre"
+			"mtrew"
 		],
 		"our_projects": [
 			"ooc",
