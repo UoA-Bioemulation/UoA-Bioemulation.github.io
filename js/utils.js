@@ -417,6 +417,9 @@ function getStringForPublication(publication) {
         str = getReferenceForProceeding(publication);
         bibtex = getBibtexForCollection(publication, bibtex_key);
     }
+    else if("type" in publication && publication["type"] === "paper") {
+        str = getReferenceForProceeding(publication);
+    }
     else {
         return "";
     }
@@ -429,9 +432,10 @@ function getStringForPublication(publication) {
         }
     }
 
-    str += '[<a class="cursor-pointer" data-toggle="modal" data-target="#bibtexModal" data-entry="' + bibtex_key + '">Bibtex</a>] ';
-
-    str += '<span class="hide" id="' + bibtex_key + '">' + bibtex + '</span>';
+	if(bibtex !== "") {
+		str += '[<a class="cursor-pointer" data-toggle="modal" data-target="#bibtexModal" data-entry="' + bibtex_key + '">Bibtex</a>] ';
+		str += '<span class="hide" id="' + bibtex_key + '">' + bibtex + '</span>';
+	}
 
     return str;
 }
