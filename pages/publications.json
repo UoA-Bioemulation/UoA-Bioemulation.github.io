@@ -1,17 +1,78 @@
 [
-	{
+    {
         "type": "article",
-        "key": "ai2019cardiac",
-        "author": "Weiwei Ai, Nitish Dhirubhai Patel, Partha Roop, Avinash Malik and Mark L Trew",
+        "key": "sehgal2019-drug-effects",
+        "author": "Sucheta Sehgal, Saif Charania, Jonathan Reshef, Nitish D Patel, Mark L Trew",
+        "title": "Accelerating Action Potential Generation using GPU Implementation of a Resonant Model of a Cell",
+        "our_authors": [
+            "ssehgal",
+            "npatel",
+            "mtrew"
+        ],
+		"our_projects": [
+			"modelling"
+		],
+		"links": {
+			"PDF": "https://drive.google.com/file/d/1wzooVoeJLSq08EW7Pqh9DCdBnwtUVORL/view?usp=sharing"
+		}
+    },
+    {
+        "type": "article",
+        "key": "sehgal2019-drug-effects",
+        "author": "Sucheta Sehgal, Nitish D Patel, Mark L Trew",
+        "title": "Parametrizing Drug Effects with Machine Learning in a New Resonant Model of Cell Electrophysiology",
+        "our_authors": [
+            "ssehgal",
+            "npatel",
+            "mtrew"
+        ],
+		"our_projects": [
+			"modelling"
+		],
+		"links": {
+			"PDF": "https://drive.google.com/file/d/1lGhxXGfpfBRfBHfw_uQFVTHzw0A3U-PX/view?usp=sharing"
+		}
+    },
+    {
+        "type": "article",
+        "key": "sehgal2019-resonant-model-new",
+        "author": "Sucheta Sehgal, Nitish D Patel, Avinash Malik, Partha S Roop, Mark L Trew",
+        "title": "Resonant model - A new paradigm for modeling an action potential of biological cells",
+        "journal": "PloS one",
+        "volume": "14",
+        "number": "5",
+        "pages": "e0216999",
+        "year": "2019",
+        "month": "may",
+        "publisher": "Public Library of Science",
+        "our_authors": [
+            "ssehgal",
+            "npatel",
+            "amalik",
+            "proop",
+            "mtrew"
+        ],
+		"our_projects": [
+			"modelling"
+		],
+		"links": {
+			"PDF": "https://drive.google.com/file/d/1ncOlZj6Hpv4iyAo5j2lFCgCRinl4ehxE/view?usp=sharing"
+		}
+    },
+    {
+        "type": "article",
+        "key": "ai2019-cardiac-electrical-modeling",
+        "author": "Weiwei Ai, Nitish Dhirubhai Patel, Partha Roop, Avinash Malik, Mark L Trew",
         "title": "Cardiac Electrical Modeling for Closed-loop Validation of Implantable Devices",
         "journal": "IEEE Transactions on Biomedical Engineering",
         "year": "2019",
+        "month": "may",
         "publisher": "IEEE",
         "our_authors": [
             "wai",
-            "npat",
+            "npatel",
             "proop",
-            "amal",
+            "amalik",
             "mtrew"
         ],
 		"our_projects": [
@@ -20,28 +81,90 @@
 		]
     },
     {
-		"type": "proceedings",
-		"key": "codes2017-sand",
-		"author": "Sidartha Andalam, Nathan Allen, Avinash Malik, Parthasarathi Roop, Mark L. Trew",
-		"title": "A novel emulation model of the cardiac conduction system",
-		"booktitle": "(to appear in) CODES+ISSS: International Conference on Hardware/Software Codesign and System Synthesis",
-		"year": "2017",
-		"month": "oct",
-		"location": "Seoul, South Korea",
-		"links": {
-		},
-		"our_authors": [
-			"sand",
-            "nall",
-			"amal",
-			"proop",
-			"mtrew"
-		],
+        "type": "article",
+        "key": "wang2019-a-formal-approach",
+        "author": "Luman Wang, Avinash Malik, Partha Roop, Leo K Cheng, Niranchan Paskaranandavadivel",
+        "title": "A Formal Approach for Scalable Simulation of Gastric ICC Electrophysiology",
+        "journal": "IEEE Transactions on Biomedical Engineering",
+        "year": "2019",
+        "month": "mar",
+        "publisher": "IEEE",
+        "our_authors": [
+            "lwang",
+            "amalik",
+            "proop"
+        ],
+		"our_projects": [
+			"modelling"
+		]
+    },
+    {
+        "type": "proceedings",
+        "key": "andalam2018-rethinking-validation-process",
+        "author": "Sidharta Andalam, Partha Roop, Avinash Malik, Mark Trew",
+        "title": "Rethinking the validation process for medical devices: a cardiac pacemaker case study",
+        "booktitle": "2018 IEEE 21st International Symposium on Real-Time Distributed Computing (ISORC)",
+        "year": "2018",
+        "month": "may",
+        "location": "Singapore",
+        "publisher": "IEEE",
+        "our_authors": [
+            "sandalam",
+            "proop",
+            "amalik",
+            "mtrew"
+        ],
+		"our_projects": [
+			"validation",
+			"modelling"
+		]
+    },
+    {
+        "type": "article",
+        "key": "andalam2017-a-novel-emulation",
+        "author": "Sidharta Andalam, Nathan Allen, Avinash Malik, Partha S Roop, Mark Trew",
+        "title": "A Novel Emulation Model of the Cardiac Conduction System",
+        "journal": "ACM Transactions on Embedded Computing Systems (TECS)",
+        "volume": "16",
+        "number": "5s",
+        "pages": "157",
+        "year": "2017",
+        "month": "oct",
+        "publisher": "ACM",
+        "our_authors": [
+            "sandalam",
+            "nallen",
+            "amalik",
+            "proop",
+            "mtrew"
+        ],
 		"our_projects": [
 			"ooc",
 			"modelling"
 		]
-	},
+    },
+    {
+        "type": "article",
+        "key": "andalam2017-hybrid-automata-model",
+        "author": "Sidharta Andalam, Avinash Malik, Partha Roop, Mark Trew",
+        "title": "Hybrid automata model of the heart for formal verification of pacemakers",
+        "journal": "EPiC Series in Computing",
+        "volume": "43",
+        "pages": "Sep-17",
+        "year": "2017",
+        "month": "feb",
+        "publisher": "EasyChair",
+        "our_authors": [
+            "sandalam",
+            "amalik",
+            "proop",
+            "mtrew"
+        ],
+		"our_projects": [
+			"validation",
+			"modelling"
+		]
+    },
     {
 		"type": "proceedings",
 		"key": "embc2017-wai",
@@ -55,10 +178,10 @@
 		},
 		"our_authors": [
 			"wai",
-			"npat",
+			"npatel",
 			"proop",
-			"amal",
-			"nall",
+			"amalik",
+			"nallen",
 			"mtrew"
 		],
 		"our_projects": [
@@ -78,7 +201,7 @@
 		"links": {
 		},
 		"our_authors": [
-            "nall",
+            "nallen",
 			"proop"
 		],
 		"our_projects": [
@@ -99,12 +222,12 @@
 		},
 		"our_authors": [
 			"wai",
-			"npat",
+			"npatel",
 			"proop",
-			"amal",
-			"sand",
+			"amalik",
+			"sandalam",
 			"eyip",
-			"nall",
+			"nallen",
 			"mtrew"
 		],
 		"our_projects": [
@@ -123,11 +246,11 @@
 		"links": {
 		},
 		"our_authors": [
-			"sand",
+			"sandalam",
 			"hram",
-			"amal",
+			"amalik",
 			"proop",
-			"npat",
+			"npatel",
 			"mtrew"
 		],
 		"our_projects": [
@@ -149,12 +272,12 @@
         "links": {
         },
         "our_authors": [
-            "nall",
-            "sand",
+            "nallen",
+            "sandalam",
             "proop",
-            "amal",
+            "amalik",
             "mtrew",
-            "npat"
+            "npatel"
         ],
         "our_projects": [
             "ooc",
@@ -176,7 +299,7 @@
         },
         "our_authors": [
             "wai",
-            "npat",
+            "npatel",
             "proop"
         ],
         "our_projects": [
@@ -195,9 +318,9 @@
             "URL": "http://arxiv.org/abs/1510.04336"
         },
         "our_authors": [
-            "amal",
+            "amalik",
             "proop",
-            "sand",
+            "sandalam",
             "eyip",
             "mtrew"
         ],
@@ -218,12 +341,12 @@
         },
         "our_authors": [
             "eyip",
-            "sand",
+            "sandalam",
             "proop",
-            "amal",
+            "amalik",
             "mtrew",
             "wai",
-            "npat"
+            "npatel"
         ],
         "our_projects": [
             "modelling"
@@ -241,8 +364,8 @@
         "links": {
         },
         "our_authors": [
-            "sand",
-            "amal",
+            "sandalam",
+            "amalik",
             "proop",
             "mtrew"
         ],

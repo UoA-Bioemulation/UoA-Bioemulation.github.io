@@ -3,7 +3,7 @@
         "key": "proop",
         "name": "Partha Roop",
         "photo": "https://unidirectory.auckland.ac.nz/people/imageraw/p-roop/10290280/biggest",
-        "position": "Associate Professor",
+        "position": "Professor",
         "role": "leader",
         "contact": {
             "phone": "+64 9 923 5583",
@@ -17,7 +17,7 @@
         }
     },
     {
-        "key": "amal",
+        "key": "amalik",
         "name": "Avinash Malik",
         "photo": "https://unidirectory.auckland.ac.nz/people/imageraw/avinash-malik/10399875/biggest",
         "position": "Lecturer",
@@ -55,7 +55,7 @@
         }
     },
     {
-        "key": "npat",
+        "key": "npatel",
         "name": "Nitish Patel",
         "photo": "",
         "position": "Senior Lecturer",
@@ -68,7 +68,7 @@
         }
     },
     {
-        "key": "fsun",
+        "key": "fsundram",
         "name": "Frederick Sundram",
         "photo": "https://unidirectory.auckland.ac.nz/people/imageraw/f-sundram/10347047/biggest",
         "position": "Senior Lecturer",
@@ -88,33 +88,10 @@
         }
     },
     {
-        "key": "mnad",
-        "name": "Muhammad Nadeem",
-        "photo": "https://unidirectory.auckland.ac.nz/people/imageraw/muhammad-nadeem/10287384/biggest",
-        "position": "Professional Teaching Fellow",
-        "role": "member",
-        "contact": {
-            "phone": "+64 9 373 7999",
-            "email": "muhammad.nadeem@auckland.ac.nz",
-            "unidirectory": "https://unidirectory.auckland.ac.nz/profile/muhammad-nadeem"
-        },
-        "info": {
-            "background": [
-                "Muhammad Nadeem received his BSc Engineering degree in Electrical and electronics from University of Engineering and Technology, Lahore, Pakistan. in 1998. He received his MSc Engineering degree from Royal Institute of Technology, Sweden, in 2003. He obtained the PhD degree from the Department of Electrical and Computer Engineering at University of Auckland in 2012.",
-                "He worked for University of Neuchatel and Microlab in Switzerland between 2002 and 2004. From 2004 to 2008 and 2012 to 2014, he worked as Lecturer and Assistant Professor at the COMSATS Institute of Technology, Pakistan.",
-                "He joined  the Department of Electrical and Computer Engineering at The University of Auckland in February 2014 as a Professional Teaching Fellow."
-            ],
-            "research_interests": [
-                "<ul><li>Digital System Design</li><li>FPGAs </li><li>Real-Time Embedded Systems</li><li>Computer Architectures</li><li>Internet of Things</li><li>Medical Devices and Systems</li><li>Industrial Automation</li><li>Safety Critical Java Systems</li></ul>"
-            ]
-        }
-    },
-    {
         "key": "sand",
         "name": "Sidharta Andalam",
         "photo": "http://pretzel.ece.auckland.ac.nz/wp-uploads/2013/02/sid-Large-225x300.jpg",
-        "position": "Research Fellow",
-        "role": "member",
+        "role": "alumni",
         "contact": {
             "email": "sid.andalam@aucklanduni.ac.nz"
         },
@@ -127,7 +104,7 @@
         }
     },
     {
-        "key": "nall",
+        "key": "nallen",
         "name": "Nathan Allen",
         "photo": "",
         "position": "Doctoral Candidate",
@@ -154,7 +131,7 @@
         "key": "wai",
         "name": "Weiwei Ai",
         "photo": "",
-        "position": "Doctoral Candidate",
+        "position": "Postdoctoral Researcher",
         "role": "member",
         "contact": {
             "email": "wai484@aucklanduni.ac.nz"
@@ -163,11 +140,22 @@
         }
     },
     {
-        "key": "mkuo",
-        "name": "Matthew Kuo",
+        "key": "ssehgal",
+        "name": "Sucheta Sehgal",
         "photo": "",
         "position": "Doctoral Candidate",
         "role": "member",
+        "contact": {
+            "email": "ssin263@aucklanduni.ac.nz"
+        },
+        "info": {
+        }
+    },
+    {
+        "key": "mkuo",
+        "name": "Matthew Kuo",
+        "photo": "",
+        "role": "external",
         "contact": {
             "email": "mkuo005@aucklanduni.ac.nz"
         },
@@ -179,17 +167,17 @@
         "name": "Harshavardhan Ramanna",
         "photo": "",
         "position": "Research Programmer",
-        "role": "member",
+        "role": "alumni",
         "contact": {
         },
         "info": {
         }
     },
     {
-        "key": "lwan",
+        "key": "lwang",
         "name": "Luman Wang",
         "photo": "",
-        "position": "Masters Student",
+        "position": "Doctoral Candidate",
         "role": "member",
         "contact": {
             "email": "lwan353@aucklanduni.ac.nz"
