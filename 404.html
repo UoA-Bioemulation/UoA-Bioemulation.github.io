@@ -130,8 +130,7 @@
         $("#content_pane").html('');
         $("#loading_pane").show();
 
-        var loc = window.location.href;
-        var dir = loc.substring(0, loc.lastIndexOf('/'));
+        var dir = window.location.origin;
 
         var request_page = dir + '/pages/' + page + ".html";
         var javascript_page = dir + '/pages/js/' + page + '.js';
