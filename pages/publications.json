@@ -1,7 +1,7 @@
 [
     {
         "type": "paper",
-        "key": "sehgal2019-drug-effects",
+        "key": "sehgal2019-accelerating-action-potential",
         "author": "Sucheta Sehgal, Saif Charania, Jonathan Reshef, Nitish D Patel, Mark L Trew",
         "title": "Accelerating Action Potential Generation using GPU Implementation of a Resonant Model of a Cell",
         "year": "2019",
@@ -19,7 +19,7 @@
     },
     {
         "type": "paper",
-        "key": "sehgal2019-drug-effects",
+        "key": "sehgal2019-parametrizing-drug-effects",
         "author": "Sucheta Sehgal, Nitish D Patel, Mark L Trew",
         "title": "Parametrizing Drug Effects with Machine Learning in a New Resonant Model of Cell Electrophysiology",
         "year": "2019",
@@ -33,6 +33,24 @@
 		],
 		"links": {
 			"PDF": "https://drive.google.com/file/d/1lGhxXGfpfBRfBHfw_uQFVTHzw0A3U-PX/view?usp=sharing"
+		}
+    },
+    {
+        "type": "paper",
+        "key": "sehgal2019-resonant-model",
+        "author": "Sucheta Sehgal, Nitish D Patel, Mark L Trew",
+        "title": "A Resonant Model of the Action Potential in Cardiac Cells",
+        "year": "2019",
+        "our_authors": [
+            "ssehgal",
+            "npatel",
+            "mtrew"
+        ],
+		"our_projects": [
+			"modelling"
+		],
+		"links": {
+			"PDF": "https://drive.google.com/file/d/1ncOlZj6Hpv4iyAo5j2lFCgCRinl4ehxE/view?usp=sharing"
 		}
     },
     {
@@ -58,7 +76,7 @@
 			"modelling"
 		],
 		"links": {
-			"PDF": "https://drive.google.com/file/d/1ncOlZj6Hpv4iyAo5j2lFCgCRinl4ehxE/view?usp=sharing"
+			"PDF": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0216999&type=printable"
 		}
     },
     {
