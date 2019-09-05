@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-sm-4 text-center" style="margin-bottom: 25px;">
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> Partha Roop: (+64) 9 3737599 EXT:85583</li>
+                        <li><i class="fa fa-phone fa-fw"></i> Partha Roop: (+64) 9 923 5583</li>
                         <li>
                             <i class="fa fa-envelope-o fa-fw"></i>  Partha Roop: <a href="mailto:p.roop@auckland.ac.nz">p.roop@auckland.ac.nz</a>
                         </li>
@@ -107,7 +107,7 @@
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2 text-center">
                     <hr class="small no-margin-top" style="margin-bottom: 25px;">
-                    <p class="text-muted">Copyright &copy; BioEmulation Reseach Group 2016</p>
+                    <p class="text-muted">Copyright &copy; BioEmulation Research Group 2019</p>
                 </div>
             </div>
         </div>
@@ -135,11 +135,15 @@
 
         var request_page = dir + '/pages/' + page + ".html";
         var javascript_page = dir + '/pages/js/' + page + '.js';
-
+		
+		$.ajaxSetup({cache: false});
+		
         $.ajax(request_page)
         .done(function(data) {
             $("#content_pane").html(data);
             $("#loading_pane").hide();
+
+            initPage();
         })
         .fail(function() {
             if (page != "error404") {
@@ -148,20 +152,59 @@
             else {
                 $("#content_pane").html("Unknown error.");
                 $("#loading_pane").hide();
+
+                initPage();
             }
         });
 
         $.getScript(javascript_page);
+        ga('send', 'pageview', location.pathname + location.search  + location.hash);
+    }
+
+    var load_query_params = function(page) {
+        if(page === undefined)
+            page = window.location.hash.substr(2);
+
+        query_params = [];
+        if(page.indexOf("?") > -1) {
+            var params_str = page.substr(page.indexOf("?")+1);
+
+            var params = params_str.split("&");
+            for(var i=0; i<params.length; i++) {
+                var index = params[i].indexOf("=");
+                if(index > -1) {
+                    query_params[params[i].substr(0, index)] = params[i].substr(index+1);
+                }
+            }
+
+            page = page.substr(0, page.indexOf("?"));
+        }
+
+        return page;
     }
 
     var load_from_hash = function() {
-        var page = "404";
+        var page = window.location.hash.substr(2);
+        if (page.length == 0) {
+            page = "home";
+        }
+
+        page = load_query_params(page);
 
         load_content(page);
     }
 
     $(function() {
-        load_from_hash();
+        load_content("error404");
+
+        $(".navbar-nav").find("a").click(function() {
+            if($(".navbar-collapse").hasClass("in"))
+                $(".navbar-toggle").click();
+        });
+
+        $(window).on('hashchange', function() {
+            load_from_hash();
+        });
     })
     </script>
 
@@ -172,8 +215,6 @@
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
         ga('create', 'UA-77532514-1', 'auto');
-        ga('send', 'pageview');
-
     </script>
 </body>
 
