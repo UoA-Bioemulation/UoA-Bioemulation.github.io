@@ -135,7 +135,9 @@
 
         var request_page = dir + '/pages/' + page + ".html";
         var javascript_page = dir + '/pages/js/' + page + '.js';
-
+		
+		$.ajaxSetup({cache: false});
+		
         $.ajax(request_page)
         .done(function(data) {
             $("#content_pane").html(data);
